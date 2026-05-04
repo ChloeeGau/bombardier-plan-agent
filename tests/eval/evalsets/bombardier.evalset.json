@@ -1,0 +1,67 @@
+{
+  "eval_set_id": "bombardier_eval",
+  "name": "Bombardier Agent Evaluation",
+  "description": "Evaluation set for Bombardier agent scenarios.",
+  "eval_cases": [
+    {
+      "eval_id": "brake_wear_indicator",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Show me an image of the brake Wear indicator"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "brake_pressure_location",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Show me on the cockpit, where I can see the brake pressure so that I can turn it on"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "parking_brake_procedure",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "I want to turn on the parking brake, how do I do it"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "bracket_dimension",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "I need to change the bracket, give me the dimension of the bracket (length of the bracket)"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    }
+  ]
+}

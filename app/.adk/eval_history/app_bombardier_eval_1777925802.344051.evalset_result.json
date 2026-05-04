@@ -1,0 +1,3744 @@
+{
+  "eval_set_result_id": "app_bombardier_eval_1777925802.344051",
+  "eval_set_result_name": "app_bombardier_eval_1777925802.344051",
+  "eval_set_id": "bombardier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "bombardier_eval",
+      "eval_set_id": "bombardier_eval",
+      "eval_id": "brake_wear_indicator",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I'm sorry, but I cannot find an image or description of the brake wear indicator in the provided Bombardier documents. My search did not return any results for the brake wear indicator, the brake assembly, or the landing gear system.",
+                  "thought": null,
+                  "thought_signature": "AY89a19nn6bnbFVrTerL2PZKaqcJMDXCe7DsOoBlofDTmZ_IcueVXIJOJsP_Gpqu4oU5SEAfO0JBnVmBE-io9mNO520SNZV035vTFxZETnO43MDWPqblWKssaJgvbgG1N72kkiM_nsSDAwgcGYk5IEJHQjhZ4aQoZjFEUSXOi-UbSkhlPyC335WgANfGkKBoTmAaidsmK3lEh6BicL8gniVAq-L7sCbbP27ebQbW8W71kYWyxsPGta1PrSbYfZ9EDjDbJ0SVu5sfuegNaXkL7uY546W3Mg3Vx4U_FN3Y8bCKBj7polYZ4yS2xSm-6rsjXiL4g6Lba9gzs3dyHgZ2EGzYf0T8haypjJSHntkhhLXMBHpImSTcCTte3nKvAlGmHo2wu-8_atTgRh87lsDBgAPSay6C9YfTq6SV0ikWNhAwTTCPHUrvJzT703BmCzbdrGD_O4gl3pCP8UCgd2BJmw==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-797e3e45-b5af-4dde-8e75-e311278b2520",
+                          "args": {
+                            "query": "brake wear indicator diagram image"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18UGxJdPNAh2y-piM-ljBDUpwi8bxAAK4X-A0F1XVzSWt2varwMcRJCavPxCYxhkKwlHARldLRV0A_lnPLLk-ulO7x80Z7kCiPLmNdu46zI8NFmoII-GFI04TUFZeiKiHZOrDfTnhiGQ2mn89jSUKZkt4_JRsuuajMKejkfQH5TR2CqfxsU4G05ckJYQYOgpk2_l5teX7D70dwduU-pithnsoPrcLeXCAbzNoUiiRZAyZzLpGks6bvF4zpZ2AE4hibiEjaKKI6TMZwRAs6unY-_hJYX7917aFWcN-HrYrSAott61sFeAQVLWo_Tt2ThtuLG6U9zhI_U6aclo4F4oBhc_8KHK9wRmypKhkqdMiBpnjjIgatf4M55iyZUzmMbsx-D_gaXP04qNsYd1dObUiAhCexI9cWIkf0jLEjcqw==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-797e3e45-b5af-4dde-8e75-e311278b2520",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-3b286b6c-75a2-4833-84a4-e3964cd722e8",
+                          "args": {
+                            "query": "brake wear indicator"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a19H_VLA5pNfOh0rSengro2Rjwy9z8hzSZYU1_COmGAJR6pg6GBfkwJq7RgddSoyJiKu_ZCEHZxoHvWZMAs6wOCPcq_GvxpLJdKUm_ZgOXm-rxC8nl5ygaXcFTVetmZVRsItA-jD6PGVvUUTp9eTk2jenZs4Lll7_FnF2uabSgzRu_JMniQVD4pMkZI4TPElPk4f5qHlnlSPXEY59cQe7azM9zX9f8q4oi4N7mN8mKiJeu4haG5k265tAmbZKYibT8rpwGxmBCs4jNNaG4_ztuKiPg4_KWtB9eGR1YsRg9sNcdV_sFTW0r8GTK5tNCpLrlfQzNZafLd7cJHorx844cct",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-3b286b6c-75a2-4833-84a4-e3964cd722e8",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-88005eca-77b6-472f-8105-59d80a17f000",
+                          "args": {
+                            "query": "brake wear"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18fvP6f1lNak324Xk06rgVoNsnmremrNv6jzcHPWRZjos3H4sayQouaVGdJcQve0Rh1q85tozFKg-Exu-CnDOR01wNcTCwsI5yA-US-DHbOXG2tuG2YY8d474JhSDJYnAnsa76Rgk0-q4of8_WOiuy2XLAj0pvqZezYBo9pnlyoVJjq71XWYGsAauadPHWjFfQa1Mynsx9GkDm6nw5GEC2nryFJCMZYRJ-V1IMREumETrIBjGgdNH1GdLWuC5b8kj3RJgBr7RTs3uGbbloLCdXGBqSUuFRCxu5D-lZYa36tEcxA7bqBSF0OWH8E9waK4K0HQXxwtIeqfrrrczf7CbvM-e79rBs_yg2rKHNLapSO7AtZybSzXoFZKdXSW8bsoDeB0STx9SuLCjvkKKD65MJKmlLB_iLCgg6CLps=",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-88005eca-77b6-472f-8105-59d80a17f000",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-418f4f02-c6a1-4fe2-9411-d48010555e62",
+                          "args": {
+                            "query": "brake"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18Fos1dPWttirnn91ZTwWTEDVvLvbfM0exqOgSgHl9XYw--Xe3qkxeROJdL7dR3_uwxS8Fco9Hug2vcW9JWuce9dDkdP2lLexaett92-tDwjt-u7RSc9vMqZPqy-dp8U63ln1541ZAVoXAfENDfzDU_Yp4BJScqxf8mMOmUzgiqCWYn6JZaW2Qv-Dj28QdUkLdGckQZ5Vld-TX8DLBGzb4IXmlqWk8BcF3yS6FkAIj80zGzGFZ64k8FoRwMig==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-418f4f02-c6a1-4fe2-9411-d48010555e62",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-c2705c79-9925-40ce-b3a7-ad43deca186f",
+                          "args": {
+                            "query": "landing gear"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a19kBub7krOqqqc1MFL1ZI2ok9d3ImFFiUlmE4dC-HgK0R0hloBXu5kqp7lJrcJUKcyhlQBfisWGD3ttK4wViBMh6GRUd-Wx4qj5Bqm2jnkX0CkTZgUiGXC0w04GD8gBxPhqiJCwUfpyXGYOvRUkOo47bpeCCqGBH7dSci3WCXMuoOlXHDHgSe7sWAB6Y06qx-lPE0Lwpi4DKkdQwg8O0v0PgPeZizIH2-Cj9pbldqdUzFh1gsCj_3BPZTPWDc1W_4vuRq4WdgybEDyy3MwA6WMx79I1xLXeORfRH527qfSHNnn1GkAbkLwDJ78LICeH9dvr8tmAsMLj_XD_zIT60sj9nGNPLxHd6jrnXA==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-c2705c79-9925-40ce-b3a7-ad43deca186f",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-be0bf087-2dd4-4bb4-ac7c-885ec45e2d81",
+                          "args": {
+                            "query": "parking brake"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1-y3ZcBemKaQ81qKmLnrneLScaXjp2hJM0vSnZuxjp74ei_u6GPnmrKFiNMN2wCY3nw0pEIK1ymM9rEcytN2yeOTrCZQ1sbVaedCu_AWGt2JPXrgWFKuNTQu4ZcS4bEKx-zR1DxEA2GEV6G6H3cQfViDQBRE5HZIK63hFG5tWlJAvSsgcDTZXgiVkClAVc-4iue09ocozKqahYYRE4FOI69gnflSE_QWFgh0kZieUURsnTZ2r2-LGH9QQyvE8tW3msgNBKrRiJhbbO-6XChp-HFsK4id-IZGb_eYWyXgof3eQlmY6aSsdi8XccAeU-Y7nVy_y1h9S91y8PeUbcWaq9q-JFwYoDsybpzDVDwqF-PKu9DXm344q0e2xOQoFxoZmJZnaZCPidkVLNDVH3VLh40fRqoSBUCKiZ691i8w-gyigYOx4nFHN1XVR4Oua6NrnzipEgMmORkl_Vy1KiqH6hA8CGB6Sp-STFUdc2aDYY1vwwxhgLsQDg80bvZv8MlVyzGfYRby7pgiS9DlchwFxhD8Fh-By5UawK9d4lMIh1kIFSViNLKIzAHa-0wiaLK3iwZ-e0yZw==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-be0bf087-2dd4-4bb4-ac7c-885ec45e2d81",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-372519d7-4960-41a5-9473-2ae20ec5bcf6",
+                          "args": {
+                            "query": "indicator"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18zEjb_1z9g00jOvxR2UwQU9DXEyAtq_nGbJc7EfLVYTFn5jLI2b523RN-8VI57vI0DDR9CDHEehvuLVDdo2454pbhkcJzhDQmf7nDRuzkL597rHIdEVo0-LCetDHD8hvwx2ngdN-w6s-eP9XN9phucphYXoAuQwBAnnmPr8HbDI29A_SGBevmNmDgm9sXHzPPIaWQtcrvB-5q_mGyl23b84LsR8I7hbr4pf5jaoE8CmVeUywoZj-ZmK-eSrrHT9xU1M3pusi9m6_GtWkI1JU7HZXD6i2U1GRQabwXyapWXz2vcDbJ1V0Ju_HC2_nxTwRxPToz1dnCuPam072IggMptTKhT9vY1V4R29iw0RLoyrmiOJunijTTmS1IuFaByBg4=",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-372519d7-4960-41a5-9473-2ae20ec5bcf6",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-574299eb-8b5d-42c4-8616-2e0de738994f",
+                          "args": {
+                            "query": "ATA 32"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18DBPc5W1nbpASuskoTWK-GP1nwxOtijMKuMCGS2c6db7bUSG_56ZWGuAES2ewuMyOJuoX-SFIk9XlNDN3rDzcuM6f5ku_pzvNfiEPXSJR9S8hXYSHqfTX8JqsFEyet-qSVb-KROxY8nzTi4fQZ3kHD7202pQQvGxmqKvli1yEDvwOKfXsyL4xSjhuuG-FSNsDVy9aYlhF2ukH_xVBL10Q6l3YJPla57HY45ZbCtxpHKf8oxtK3d_KwqiyuNyLy9S4lllI5-jcUw4dddlUNpiNVPAeues0dwGPoZl1EoR3fxLwdIeJ9J3mDwa6tUyx5LklwmQEHYqDqH9xkys4bZR_7r1XXtv5AcXQxnvAYXsp2hfEKK8OQvBdPbbw09xTOoQ3Axob8_vKvTcfD9HpD_9a2apx9c_5wF5rEc0t8d4fICYkRQIwSm0rgYB_LlTQ5Ln5g-9k9iLPFX0n3eHus9j0IiezAv1fNTxNRdP62FolnbFZYp8rIxRLPSjIXAv5hl_wgzyZDhUa0kMawQms3_Yg0NvH4wugv1KNxz0QtkyIkP-hXopNpHe78Pi-cHxCwrmxfqtW-19q8aYOb",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-574299eb-8b5d-42c4-8616-2e0de738994f",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-c06b1f84-1ef8-4cb2-a3d5-4fe38fc2c3ce",
+                          "args": {
+                            "query": "Main Landing Gear"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18Ub1xzXeKATKHB1MxNzQdzsFLDiz2c6Fa1fzwxbQbHV6EYqx3djhoYYswetXmVJ5LnqZqRek8ux3Km7AIW4AQfCGLajNxwGmwj97LQCOeF6RQONcwGKJ9Xl4nj1Yaz6S-JBiMXEEgGMD5iyY8T7qsCzuTa0OCMw0sMtVoHyEPj5pLP2nm9UBVm91SQ1tw1RY3vM9m4fSIb0U9yOqyhmulLNyQVIlAjQHs2s-0hftaQrow5uG5-QUwFIC-1vGQgz2b0TYmjVlwcqOxD4P_R-pvvwVbkzJ9cEDghffBmVfsQmZc=",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-c06b1f84-1ef8-4cb2-a3d5-4fe38fc2c3ce",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-d714bfc5-5bac-40ae-ada3-f308cec0125d",
+                          "args": {
+                            "query": "Wear indicator"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1-11mprVepucaWcztsXtdRGVFJmkyILFDVpmNswkQHppfFeElALGU6HD8kKp_MwjaHTwo09BAiByqrrIGekzLck7aHzSXvNdhcM075v80dl_gWoIJPW2z1y0FmWWfXXrCGqkMORfl8mFoy2egV6X9j-tFW2GLvglV17n63TymJ9rZerwyE-YwjcIT4_vChwR8fw_9FZslYiF5wTbnP0DxVJX9kWnJFthUBiUbv2L1fYqrQwoU-tuVBeiw1HueHVa-WWUZmdAyOIzqf6GLHim1DCYE8uHutCiOov_oA6kzOW_5Gqcj511IeCIfloVnHwemWjICeTdjXTFyeiZZwjZogozEk1Frn1NG2cVvSkyKT7sAtoLrj4fmdZmTuthehnkF_rsVr-AnPVTeQnSGknLaZf0m96UF0hPIu0CO3kr-_4DzjcYmoJ8rRJWLLXEP_9x2-0cQ==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-d714bfc5-5bac-40ae-ada3-f308cec0125d",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-55f5fcf6-c624-4089-9f2e-934eb9b327f8",
+                          "args": {
+                            "query": "15-10-9"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a19_aSlSkzXhSSMTsipdkPsW0aL_8JqPs2IRy-9n6YvSI9QW-vQrQZZMiRxEYUbXAJsG3JaluxgtMnxwYMeTjFaWkbeh2x9bEt3-9DV3II9OeDsekeHxcsyOJ4yl270s6jhXfMcxa0Zh3PKMGnwxjlPBZDnEBSLJsG4dcHlevkue6QI91ErPiBBflDHGgGThfd63XBLMeL9oW4DTO0QVYS_Qecn29VCwaEay5almMRuO5pl_RYlqlz-GZEAT5dJ8UVInvj54DEHT4UXcwcYF1MWSTWUZMmlq33TpAB7phGuBwbyqi-RTa5Io3mphOA_bv1A6DNPEVnQ0_G5CL4oXapqb-AmchkPtrYcGJZpdVikhrK2e3ooeMmAtPlLZLrVPzhdTX2TsX01aBJ372Cx6ovwCFoBg9LCJGSmUXmUlly7cbX_o6UskUIbHuEI-SEkYzA==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-55f5fcf6-c624-4089-9f2e-934eb9b327f8",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-34a11ea8-ccd6-4067-8110-37f821ce2222",
+                          "args": {
+                            "query": "brake maintenance"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1_nZGBeuK5OVOehidN6B4nuVjn093lfG_XieO5c3KzhmpkWF1XaCXLLbxr85ooyvpk2N8NkTFixEPRnQeBlgh2OGqpWDTj-WomZ_vEcA6eieaR14YzGCTDrfwJUXIE0gZt41LgnC9kbxU5_9Sx4rUEXrICdws43h35Hfjfg3Lz3YawUh5GRdSfjF49dppX5zUscMvYtVBTZARpjmYQoPF-JGR8Mowq0S_gL2yqIs1Crv3bKduN0jonf5v2H8UuCD8zQEekFq-Ek8r8bdiZ-RGYds6FUC92s1OloSjO1DvveBIsRSy8mvlez2Yvagx9SQLzYGYUvukhetLarIzVy6-1jXIE5XM0jHvktqL1KKUuYpQCSkSHzfzygje4bdg==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-34a11ea8-ccd6-4067-8110-37f821ce2222",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-d3bb618d-9807-40b2-bf4f-e2e01b110f06",
+                          "args": {
+                            "query": "Bombardier"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1_zeoXFOw2w8ap-h7ujOMxOx2FapWWlPKvIWeElyNVU_zFuolm5bQ_uhMxej7raeHwp2NdZrr5mNxSA2m5gW87ATDRAYxY18nL8hCUKP-QWHoy40DWa9dJ7tFhasdUrt0Q--wLWXVLYYjK3uRT9OMx6N4SXNj-sGvrrChDIUw==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-d3bb618d-9807-40b2-bf4f-e2e01b110f06",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-4348da11-70fc-487b-b8ff-90cc17c36acf",
+                          "args": {
+                            "query": "wear pin"
+                          },
+                          "name": "search_documents",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a19zjdu_rNsw92x65xeVeukAOWKtJYrxEalumvcArJ3O3PgAHhMxacceaXaipRDRupgZcd98HHgs5poLfByEsk9f9nqqxwZUIsUUFrV3YKOgjYWs6ol5-AxsSE1rO_K4LorGc57L_F6xXbuYk7W_SAIkjNu6UMY2wHpWadKcHi6Az-ewAF_zHyq4j6o-Qc3YKr_61JKNitYewn1YNqtFDEiVssDsNrDRQhI_qYtM9-HtxdP7pdfJhRxETCoLBI1Sx6zp9uNKfnP-r-BpZRXBL8bTXEhIHlYgqSSf0OzM0qwelntHKY2_DP96f4pXKRcnUiebKSIim874d5O_KMJaxwAWaw2mQRjLi34Yjp2bXsXj2hQHo3vBdCVpCdHnVAQKeC8y5McRJGc0xopni-p7n5VnDpy8XEf_qbUb9V7F1US_PPGlr1cysEf8MI2_2t8xV9OIavIyRZpwspbVaHjthrGQOU3ZPH4d4jkSje3g6crngom1bKFsTBcq1i4A5FP1alvBMhrQUwl1Gg9Hj-PfUQc6pu-Cm1lIDxY6gCLlnFI7ElIG7M2a4YGt96379rfXFNyAk2eDp5GzzTHBXIAIjbmfn7jwmv3b0O_sSD8UT6vJl5v4SkWAcUo9UpKU2vT8wCREUfJQJdrSVqi31vHKx9vlCNq58w6Acn5-3DANi3hniqwerLtRydtNI5XFXCfuhxpMDRcsiLhhXyPn-ouNMWz3nq1Pm5g5SP2Wz6NfQw0MdBI_3L1gZNHbdC_zPBS4H02tbUFw7x2tW9DY0iw69Y3s0UPuB4Vsm2fFD4P10dWqfoZwwvv_xNMVg27iEOGyUtZPAZzdym5CauGZcv1kt_9Cvf7R",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-4348da11-70fc-487b-b8ff-90cc17c36acf",
+                          "name": "search_documents",
+                          "response": {
+                            "result": "No results found."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1777925535.829162,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.\nYour goal is to provide helpful, accurate answers based ONLY on the provided documents.\nWhen answering:\n1. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it and describe it.\n2. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.\n3. Provide a clear reference to the document and page for proof.\n4. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).\n5. If you cannot find the information in the documents, state that you cannot find it. Do not make up information.\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Search Bombardier documents for information about parts, procedures, and diagrams.",
+                          "name": "search_documents",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "query": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "query"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The agent exhausted its search capabilities using the available tool and, upon finding no information, followed the developer instruction to \"state that you cannot find it\" if the information is not in the documents. This directly addresses the user's query based on the available evidence.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "While the agent was unable to provide the image requested, it was helpful by accurately reporting the absence of information in its source material, as per the developer's instructions. Stating that information is unavailable is more helpful and provides more useful (truthful) information than making up an answer or failing to respond.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___606f41cc-f9c8-4ead-bc40-1001d2762fdf",
+      "session_details": {
+        "id": "___eval___session___606f41cc-f9c8-4ead-bc40-1001d2762fdf",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "277984ff-cda0-4fc3-9b4d-893ebd614462"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "936fbfee-d4f8-4239-80d7-8e6f9898bbaa",
+            "timestamp": 1777925533.573088
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-797e3e45-b5af-4dde-8e75-e311278b2520",
+                    "args": {
+                      "query": "brake wear indicator diagram image"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18UGxJdPNAh2y-piM-ljBDUpwi8bxAAK4X-A0F1XVzSWt2varwMcRJCavPxCYxhkKwlHARldLRV0A_lnPLLk-ulO7x80Z7kCiPLmNdu46zI8NFmoII-GFI04TUFZeiKiHZOrDfTnhiGQ2mn89jSUKZkt4_JRsuuajMKejkfQH5TR2CqfxsU4G05ckJYQYOgpk2_l5teX7D70dwduU-pithnsoPrcLeXCAbzNoUiiRZAyZzLpGks6bvF4zpZ2AE4hibiEjaKKI6TMZwRAs6unY-_hJYX7917aFWcN-HrYrSAott61sFeAQVLWo_Tt2ThtuLG6U9zhI_U6aclo4F4oBhc_8KHK9wRmypKhkqdMiBpnjjIgatf4M55iyZUzmMbsx-D_gaXP04qNsYd1dObUiAhCexI9cWIkf0jLEjcqw==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "c88c7b4c-024a-43b8-b433-5cc378255967"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 20,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 20
+                }
+              ],
+              "prompt_token_count": 227,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 227
+                }
+              ],
+              "thoughts_token_count": 53,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 300,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "c88c7b4c-024a-43b8-b433-5cc378255967"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "1ed7f176-69af-4dd8-b094-76ed80d45afa",
+            "timestamp": 1777925533.574516
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-797e3e45-b5af-4dde-8e75-e311278b2520",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "f38c3d5b-4692-47c4-bf49-c88d7ec2f724",
+            "timestamp": 1777925538.374712
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-3b286b6c-75a2-4833-84a4-e3964cd722e8",
+                    "args": {
+                      "query": "brake wear indicator"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a19H_VLA5pNfOh0rSengro2Rjwy9z8hzSZYU1_COmGAJR6pg6GBfkwJq7RgddSoyJiKu_ZCEHZxoHvWZMAs6wOCPcq_GvxpLJdKUm_ZgOXm-rxC8nl5ygaXcFTVetmZVRsItA-jD6PGVvUUTp9eTk2jenZs4Lll7_FnF2uabSgzRu_JMniQVD4pMkZI4TPElPk4f5qHlnlSPXEY59cQe7azM9zX9f8q4oi4N7mN8mKiJeu4haG5k265tAmbZKYibT8rpwGxmBCs4jNNaG4_ztuKiPg4_KWtB9eGR1YsRg9sNcdV_sFTW0r8GTK5tNCpLrlfQzNZafLd7cJHorx844cct",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "2d04ab5f-7575-4139-8870-cc86fdd54113"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 18,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 18
+                }
+              ],
+              "prompt_token_count": 305,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 305
+                }
+              ],
+              "thoughts_token_count": 41,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 364,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "2d04ab5f-7575-4139-8870-cc86fdd54113"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "25d2fef6-68c5-43aa-b8c9-cd26b97464a5",
+            "timestamp": 1777925538.37984
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-3b286b6c-75a2-4833-84a4-e3964cd722e8",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "9cc0fdea-832e-4955-a4fb-082a5083315b",
+            "timestamp": 1777925548.1644611
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-88005eca-77b6-472f-8105-59d80a17f000",
+                    "args": {
+                      "query": "brake wear"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18fvP6f1lNak324Xk06rgVoNsnmremrNv6jzcHPWRZjos3H4sayQouaVGdJcQve0Rh1q85tozFKg-Exu-CnDOR01wNcTCwsI5yA-US-DHbOXG2tuG2YY8d474JhSDJYnAnsa76Rgk0-q4of8_WOiuy2XLAj0pvqZezYBo9pnlyoVJjq71XWYGsAauadPHWjFfQa1Mynsx9GkDm6nw5GEC2nryFJCMZYRJ-V1IMREumETrIBjGgdNH1GdLWuC5b8kj3RJgBr7RTs3uGbbloLCdXGBqSUuFRCxu5D-lZYa36tEcxA7bqBSF0OWH8E9waK4K0HQXxwtIeqfrrrczf7CbvM-e79rBs_yg2rKHNLapSO7AtZybSzXoFZKdXSW8bsoDeB0STx9SuLCjvkKKD65MJKmlLB_iLCgg6CLps=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "333d5026-6c46-4b2a-95e8-832c17899709"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 369,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 369
+                }
+              ],
+              "thoughts_token_count": 58,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 444,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "333d5026-6c46-4b2a-95e8-832c17899709"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "0e5b3efb-af78-44aa-bd92-36aa73c20617",
+            "timestamp": 1777925548.170103
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-88005eca-77b6-472f-8105-59d80a17f000",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "2854539a-0b5b-4ac1-b165-4797b6da78b8",
+            "timestamp": 1777925554.172768
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-418f4f02-c6a1-4fe2-9411-d48010555e62",
+                    "args": {
+                      "query": "brake"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18Fos1dPWttirnn91ZTwWTEDVvLvbfM0exqOgSgHl9XYw--Xe3qkxeROJdL7dR3_uwxS8Fco9Hug2vcW9JWuce9dDkdP2lLexaett92-tDwjt-u7RSc9vMqZPqy-dp8U63ln1541ZAVoXAfENDfzDU_Yp4BJScqxf8mMOmUzgiqCWYn6JZaW2Qv-Dj28QdUkLdGckQZ5Vld-TX8DLBGzb4IXmlqWk8BcF3yS6FkAIj80zGzGFZ64k8FoRwMig==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "7ebe2f99-134b-48b5-8d0c-51931d06e16e"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 16,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 16
+                }
+              ],
+              "prompt_token_count": 449,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 449
+                }
+              ],
+              "thoughts_token_count": 30,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 495,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "7ebe2f99-134b-48b5-8d0c-51931d06e16e"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "2f1ed82f-eb4a-4a3e-b5ed-7f2ab7d470a1",
+            "timestamp": 1777925554.181659
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-418f4f02-c6a1-4fe2-9411-d48010555e62",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "e81159cc-fb94-43ac-9f75-83c3c7234eee",
+            "timestamp": 1777925561.847478
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-c2705c79-9925-40ce-b3a7-ad43deca186f",
+                    "args": {
+                      "query": "landing gear"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a19kBub7krOqqqc1MFL1ZI2ok9d3ImFFiUlmE4dC-HgK0R0hloBXu5kqp7lJrcJUKcyhlQBfisWGD3ttK4wViBMh6GRUd-Wx4qj5Bqm2jnkX0CkTZgUiGXC0w04GD8gBxPhqiJCwUfpyXGYOvRUkOo47bpeCCqGBH7dSci3WCXMuoOlXHDHgSe7sWAB6Y06qx-lPE0Lwpi4DKkdQwg8O0v0PgPeZizIH2-Cj9pbldqdUzFh1gsCj_3BPZTPWDc1W_4vuRq4WdgybEDyy3MwA6WMx79I1xLXeORfRH527qfSHNnn1GkAbkLwDJ78LICeH9dvr8tmAsMLj_XD_zIT60sj9nGNPLxHd6jrnXA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "d1a57b42-0652-40e8-8591-cb8defff0d02"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 500,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 500
+                }
+              ],
+              "thoughts_token_count": 47,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 564,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "d1a57b42-0652-40e8-8591-cb8defff0d02"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "9b1d4528-ddd2-4131-90b2-afea299ed4ca",
+            "timestamp": 1777925561.850077
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-c2705c79-9925-40ce-b3a7-ad43deca186f",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "a958a8c5-50f8-4a79-b6cd-d75cde2b345e",
+            "timestamp": 1777925571.781502
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-be0bf087-2dd4-4bb4-ac7c-885ec45e2d81",
+                    "args": {
+                      "query": "parking brake"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1-y3ZcBemKaQ81qKmLnrneLScaXjp2hJM0vSnZuxjp74ei_u6GPnmrKFiNMN2wCY3nw0pEIK1ymM9rEcytN2yeOTrCZQ1sbVaedCu_AWGt2JPXrgWFKuNTQu4ZcS4bEKx-zR1DxEA2GEV6G6H3cQfViDQBRE5HZIK63hFG5tWlJAvSsgcDTZXgiVkClAVc-4iue09ocozKqahYYRE4FOI69gnflSE_QWFgh0kZieUURsnTZ2r2-LGH9QQyvE8tW3msgNBKrRiJhbbO-6XChp-HFsK4id-IZGb_eYWyXgof3eQlmY6aSsdi8XccAeU-Y7nVy_y1h9S91y8PeUbcWaq9q-JFwYoDsybpzDVDwqF-PKu9DXm344q0e2xOQoFxoZmJZnaZCPidkVLNDVH3VLh40fRqoSBUCKiZ691i8w-gyigYOx4nFHN1XVR4Oua6NrnzipEgMmORkl_Vy1KiqH6hA8CGB6Sp-STFUdc2aDYY1vwwxhgLsQDg80bvZv8MlVyzGfYRby7pgiS9DlchwFxhD8Fh-By5UawK9d4lMIh1kIFSViNLKIzAHa-0wiaLK3iwZ-e0yZw==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "6a52557d-a193-4d44-a30f-9a61f666afaf"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 569,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 569
+                }
+              ],
+              "thoughts_token_count": 86,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 672,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "6a52557d-a193-4d44-a30f-9a61f666afaf"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "2a60563d-e4ed-4088-b72e-40baecec5882",
+            "timestamp": 1777925571.7843342
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-be0bf087-2dd4-4bb4-ac7c-885ec45e2d81",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "0038041a-c5b8-464a-8ceb-516620e13769",
+            "timestamp": 1777925583.956341
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-372519d7-4960-41a5-9473-2ae20ec5bcf6",
+                    "args": {
+                      "query": "indicator"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18zEjb_1z9g00jOvxR2UwQU9DXEyAtq_nGbJc7EfLVYTFn5jLI2b523RN-8VI57vI0DDR9CDHEehvuLVDdo2454pbhkcJzhDQmf7nDRuzkL597rHIdEVo0-LCetDHD8hvwx2ngdN-w6s-eP9XN9phucphYXoAuQwBAnnmPr8HbDI29A_SGBevmNmDgm9sXHzPPIaWQtcrvB-5q_mGyl23b84LsR8I7hbr4pf5jaoE8CmVeUywoZj-ZmK-eSrrHT9xU1M3pusi9m6_GtWkI1JU7HZXD6i2U1GRQabwXyapWXz2vcDbJ1V0Ju_HC2_nxTwRxPToz1dnCuPam072IggMptTKhT9vY1V4R29iw0RLoyrmiOJunijTTmS1IuFaByBg4=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "f6452bb9-7059-4116-8e9e-3bc57a6ab85a"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 16,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 16
+                }
+              ],
+              "prompt_token_count": 677,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 677
+                }
+              ],
+              "thoughts_token_count": 50,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 743,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "f6452bb9-7059-4116-8e9e-3bc57a6ab85a"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "cac9a7a1-965c-4c53-9f5d-29eec440d46c",
+            "timestamp": 1777925588.287723
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-372519d7-4960-41a5-9473-2ae20ec5bcf6",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "4443d5b7-a4d4-4738-aa38-09e95bee3226",
+            "timestamp": 1777925591.549418
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-574299eb-8b5d-42c4-8616-2e0de738994f",
+                    "args": {
+                      "query": "ATA 32"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18DBPc5W1nbpASuskoTWK-GP1nwxOtijMKuMCGS2c6db7bUSG_56ZWGuAES2ewuMyOJuoX-SFIk9XlNDN3rDzcuM6f5ku_pzvNfiEPXSJR9S8hXYSHqfTX8JqsFEyet-qSVb-KROxY8nzTi4fQZ3kHD7202pQQvGxmqKvli1yEDvwOKfXsyL4xSjhuuG-FSNsDVy9aYlhF2ukH_xVBL10Q6l3YJPla57HY45ZbCtxpHKf8oxtK3d_KwqiyuNyLy9S4lllI5-jcUw4dddlUNpiNVPAeues0dwGPoZl1EoR3fxLwdIeJ9J3mDwa6tUyx5LklwmQEHYqDqH9xkys4bZR_7r1XXtv5AcXQxnvAYXsp2hfEKK8OQvBdPbbw09xTOoQ3Axob8_vKvTcfD9HpD_9a2apx9c_5wF5rEc0t8d4fICYkRQIwSm0rgYB_LlTQ5Ln5g-9k9iLPFX0n3eHus9j0IiezAv1fNTxNRdP62FolnbFZYp8rIxRLPSjIXAv5hl_wgzyZDhUa0kMawQms3_Yg0NvH4wugv1KNxz0QtkyIkP-hXopNpHe78Pi-cHxCwrmxfqtW-19q8aYOb",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "a4ad18ee-1295-4c99-b6a6-55215ed8d853"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 19,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 19
+                }
+              ],
+              "prompt_token_count": 748,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 748
+                }
+              ],
+              "thoughts_token_count": 94,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 861,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "a4ad18ee-1295-4c99-b6a6-55215ed8d853"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "8f9d0e06-b465-470b-9b87-61f52d8a27fe",
+            "timestamp": 1777925591.5543602
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-574299eb-8b5d-42c4-8616-2e0de738994f",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "af464981-0c3e-4ba5-b377-36f34b44f254",
+            "timestamp": 1777925604.926935
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-c06b1f84-1ef8-4cb2-a3d5-4fe38fc2c3ce",
+                    "args": {
+                      "query": "Main Landing Gear"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18Ub1xzXeKATKHB1MxNzQdzsFLDiz2c6Fa1fzwxbQbHV6EYqx3djhoYYswetXmVJ5LnqZqRek8ux3Km7AIW4AQfCGLajNxwGmwj97LQCOeF6RQONcwGKJ9Xl4nj1Yaz6S-JBiMXEEgGMD5iyY8T7qsCzuTa0OCMw0sMtVoHyEPj5pLP2nm9UBVm91SQ1tw1RY3vM9m4fSIb0U9yOqyhmulLNyQVIlAjQHs2s-0hftaQrow5uG5-QUwFIC-1vGQgz2b0TYmjVlwcqOxD4P_R-pvvwVbkzJ9cEDghffBmVfsQmZc=",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "70fc51ca-b41a-4d49-badb-1bc660f124d3"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 18,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 18
+                }
+              ],
+              "prompt_token_count": 866,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 866
+                }
+              ],
+              "thoughts_token_count": 38,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 922,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "70fc51ca-b41a-4d49-badb-1bc660f124d3"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "a80e2db3-e7b7-4dd7-8345-cd8e63720d94",
+            "timestamp": 1777925609.4599402
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-c06b1f84-1ef8-4cb2-a3d5-4fe38fc2c3ce",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "4f74f5dd-b9c2-4d52-a510-5aa4a1cfa3a0",
+            "timestamp": 1777925612.8508549
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-d714bfc5-5bac-40ae-ada3-f308cec0125d",
+                    "args": {
+                      "query": "Wear indicator"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1-11mprVepucaWcztsXtdRGVFJmkyILFDVpmNswkQHppfFeElALGU6HD8kKp_MwjaHTwo09BAiByqrrIGekzLck7aHzSXvNdhcM075v80dl_gWoIJPW2z1y0FmWWfXXrCGqkMORfl8mFoy2egV6X9j-tFW2GLvglV17n63TymJ9rZerwyE-YwjcIT4_vChwR8fw_9FZslYiF5wTbnP0DxVJX9kWnJFthUBiUbv2L1fYqrQwoU-tuVBeiw1HueHVa-WWUZmdAyOIzqf6GLHim1DCYE8uHutCiOov_oA6kzOW_5Gqcj511IeCIfloVnHwemWjICeTdjXTFyeiZZwjZogozEk1Frn1NG2cVvSkyKT7sAtoLrj4fmdZmTuthehnkF_rsVr-AnPVTeQnSGknLaZf0m96UF0hPIu0CO3kr-_4DzjcYmoJ8rRJWLLXEP_9x2-0cQ==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "0c4fc61e-3f47-4485-963c-474198f9f53d"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 927,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 927
+                }
+              ],
+              "thoughts_token_count": 63,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1007,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "0c4fc61e-3f47-4485-963c-474198f9f53d"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "67fec422-f0a4-41df-bcac-85d3962c43a1",
+            "timestamp": 1777925612.854937
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-d714bfc5-5bac-40ae-ada3-f308cec0125d",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "d79b82c0-8c7e-4299-8a51-e46fe0d551a7",
+            "timestamp": 1777925625.392916
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-55f5fcf6-c624-4089-9f2e-934eb9b327f8",
+                    "args": {
+                      "query": "15-10-9"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a19_aSlSkzXhSSMTsipdkPsW0aL_8JqPs2IRy-9n6YvSI9QW-vQrQZZMiRxEYUbXAJsG3JaluxgtMnxwYMeTjFaWkbeh2x9bEt3-9DV3II9OeDsekeHxcsyOJ4yl270s6jhXfMcxa0Zh3PKMGnwxjlPBZDnEBSLJsG4dcHlevkue6QI91ErPiBBflDHGgGThfd63XBLMeL9oW4DTO0QVYS_Qecn29VCwaEay5almMRuO5pl_RYlqlz-GZEAT5dJ8UVInvj54DEHT4UXcwcYF1MWSTWUZMmlq33TpAB7phGuBwbyqi-RTa5Io3mphOA_bv1A6DNPEVnQ0_G5CL4oXapqb-AmchkPtrYcGJZpdVikhrK2e3ooeMmAtPlLZLrVPzhdTX2TsX01aBJ372Cx6ovwCFoBg9LCJGSmUXmUlly7cbX_o6UskUIbHuEI-SEkYzA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "53acfdd4-8c7e-4c1d-becf-75bc08854c10"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 22,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 22
+                }
+              ],
+              "prompt_token_count": 1012,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1012
+                }
+              ],
+              "thoughts_token_count": 62,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1096,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "53acfdd4-8c7e-4c1d-becf-75bc08854c10"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "aeb39c29-0902-4c09-a75e-26dda36eebcd",
+            "timestamp": 1777925629.890217
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-55f5fcf6-c624-4089-9f2e-934eb9b327f8",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "c3b4b1db-7076-4320-be51-6486bb2d8354",
+            "timestamp": 1777925638.4807339
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-34a11ea8-ccd6-4067-8110-37f821ce2222",
+                    "args": {
+                      "query": "brake maintenance"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1_nZGBeuK5OVOehidN6B4nuVjn093lfG_XieO5c3KzhmpkWF1XaCXLLbxr85ooyvpk2N8NkTFixEPRnQeBlgh2OGqpWDTj-WomZ_vEcA6eieaR14YzGCTDrfwJUXIE0gZt41LgnC9kbxU5_9Sx4rUEXrICdws43h35Hfjfg3Lz3YawUh5GRdSfjF49dppX5zUscMvYtVBTZARpjmYQoPF-JGR8Mowq0S_gL2yqIs1Crv3bKduN0jonf5v2H8UuCD8zQEekFq-Ek8r8bdiZ-RGYds6FUC92s1OloSjO1DvveBIsRSy8mvlez2Yvagx9SQLzYGYUvukhetLarIzVy6-1jXIE5XM0jHvktqL1KKUuYpQCSkSHzfzygje4bdg==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "0149ecab-4475-4b98-ae2b-4e307d233649"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 1101,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1101
+                }
+              ],
+              "thoughts_token_count": 53,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1171,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "0149ecab-4475-4b98-ae2b-4e307d233649"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "49c1f233-1379-462f-99cc-ea57507189c2",
+            "timestamp": 1777925640.6410549
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-34a11ea8-ccd6-4067-8110-37f821ce2222",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "9b526f69-a438-495c-b5ce-fb1bbfcd1a9e",
+            "timestamp": 1777925648.4275122
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-d3bb618d-9807-40b2-bf4f-e2e01b110f06",
+                    "args": {
+                      "query": "Bombardier"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1_zeoXFOw2w8ap-h7ujOMxOx2FapWWlPKvIWeElyNVU_zFuolm5bQ_uhMxej7raeHwp2NdZrr5mNxSA2m5gW87ATDRAYxY18nL8hCUKP-QWHoy40DWa9dJ7tFhasdUrt0Q--wLWXVLYYjK3uRT9OMx6N4SXNj-sGvrrChDIUw==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "bf91e542-2598-44bd-ad82-c3070e67a807"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 1176,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1176
+                }
+              ],
+              "thoughts_token_count": 20,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1213,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "bf91e542-2598-44bd-ad82-c3070e67a807"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "0e461bfb-3455-4c1d-9583-398b6f3e586d",
+            "timestamp": 1777925650.700587
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-d3bb618d-9807-40b2-bf4f-e2e01b110f06",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "99a88cea-c43f-43fc-a15a-3dafdc94e885",
+            "timestamp": 1777925653.915849
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-4348da11-70fc-487b-b8ff-90cc17c36acf",
+                    "args": {
+                      "query": "wear pin"
+                    },
+                    "name": "search_documents",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a19zjdu_rNsw92x65xeVeukAOWKtJYrxEalumvcArJ3O3PgAHhMxacceaXaipRDRupgZcd98HHgs5poLfByEsk9f9nqqxwZUIsUUFrV3YKOgjYWs6ol5-AxsSE1rO_K4LorGc57L_F6xXbuYk7W_SAIkjNu6UMY2wHpWadKcHi6Az-ewAF_zHyq4j6o-Qc3YKr_61JKNitYewn1YNqtFDEiVssDsNrDRQhI_qYtM9-HtxdP7pdfJhRxETCoLBI1Sx6zp9uNKfnP-r-BpZRXBL8bTXEhIHlYgqSSf0OzM0qwelntHKY2_DP96f4pXKRcnUiebKSIim874d5O_KMJaxwAWaw2mQRjLi34Yjp2bXsXj2hQHo3vBdCVpCdHnVAQKeC8y5McRJGc0xopni-p7n5VnDpy8XEf_qbUb9V7F1US_PPGlr1cysEf8MI2_2t8xV9OIavIyRZpwspbVaHjthrGQOU3ZPH4d4jkSje3g6crngom1bKFsTBcq1i4A5FP1alvBMhrQUwl1Gg9Hj-PfUQc6pu-Cm1lIDxY6gCLlnFI7ElIG7M2a4YGt96379rfXFNyAk2eDp5GzzTHBXIAIjbmfn7jwmv3b0O_sSD8UT6vJl5v4SkWAcUo9UpKU2vT8wCREUfJQJdrSVqi31vHKx9vlCNq58w6Acn5-3DANi3hniqwerLtRydtNI5XFXCfuhxpMDRcsiLhhXyPn-ouNMWz3nq1Pm5g5SP2Wz6NfQw0MdBI_3L1gZNHbdC_zPBS4H02tbUFw7x2tW9DY0iw69Y3s0UPuB4Vsm2fFD4P10dWqfoZwwvv_xNMVg27iEOGyUtZPAZzdym5CauGZcv1kt_9Cvf7R",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "7af82f8c-74bd-4c68-8388-3a3a27752ecc"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 17,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 17
+                }
+              ],
+              "prompt_token_count": 1218,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1218
+                }
+              ],
+              "thoughts_token_count": 124,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1359,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "7af82f8c-74bd-4c68-8388-3a3a27752ecc"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "cef4493f-4c18-46a7-8646-d138bf979c39",
+            "timestamp": 1777925653.918952
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-4348da11-70fc-487b-b8ff-90cc17c36acf",
+                    "name": "search_documents",
+                    "response": {
+                      "result": "No results found."
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "be3bf720-4aa3-477b-872f-b1bebf25b5a5",
+            "timestamp": 1777925669.9275
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I'm sorry, but I cannot find an image or description of the brake wear indicator in the provided Bombardier documents. My search did not return any results for the brake wear indicator, the brake assembly, or the landing gear system.",
+                  "thought": null,
+                  "thought_signature": "AY89a19nn6bnbFVrTerL2PZKaqcJMDXCe7DsOoBlofDTmZ_IcueVXIJOJsP_Gpqu4oU5SEAfO0JBnVmBE-io9mNO520SNZV035vTFxZETnO43MDWPqblWKssaJgvbgG1N72kkiM_nsSDAwgcGYk5IEJHQjhZ4aQoZjFEUSXOi-UbSkhlPyC335WgANfGkKBoTmAaidsmK3lEh6BicL8gniVAq-L7sCbbP27ebQbW8W71kYWyxsPGta1PrSbYfZ9EDjDbJ0SVu5sfuegNaXkL7uY546W3Mg3Vx4U_FN3Y8bCKBj7polYZ4yS2xSm-6rsjXiL4g6Lba9gzs3dyHgZ2EGzYf0T8haypjJSHntkhhLXMBHpImSTcCTte3nKvAlGmHo2wu-8_atTgRh87lsDBgAPSay6C9YfTq6SV0ikWNhAwTTCPHUrvJzT703BmCzbdrGD_O4gl3pCP8UCgd2BJmw==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "277984ff-cda0-4fc3-9b4d-893ebd614462"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 47,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 47
+                }
+              ],
+              "prompt_token_count": 1364,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1364
+                }
+              ],
+              "thoughts_token_count": 83,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1494,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-885cf39e-3df5-42b9-9ae8-415f6ccedffc",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "277984ff-cda0-4fc3-9b4d-893ebd614462"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "56435c5b-f4b7-43c2-b86c-eed2d9b4304c",
+            "timestamp": 1777925669.9573498
+          }
+        ],
+        "last_update_time": 1777925669.9573498
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1777925802.344051
+}

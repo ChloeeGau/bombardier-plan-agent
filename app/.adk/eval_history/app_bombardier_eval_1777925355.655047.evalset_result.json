@@ -1,0 +1,497 @@
+{
+  "eval_set_result_id": "app_bombardier_eval_1777925355.655047",
+  "eval_set_result_name": "app_bombardier_eval_1777925355.655047",
+  "eval_set_id": "bombardier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "bombardier_eval",
+      "eval_set_id": "bombardier_eval",
+      "eval_id": "parking_brake_procedure",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 0.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-d73547da-54ad-47d6-869d-779aa0eb8dab",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I want to turn on the parking brake, how do I do it",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "To turn on the parking brake in a Bombardier Challenger 605, follow these steps:\n\n1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side.\n2.  **Pull the PARKING BRAKE handle.**\n3.  **Rotate the handle 90°** to the locked position.\n\n**Verification:**\n*   A **PARKING BRAKE ON** advisory message will appear on the EICAS to indicate normal engagement.\n*   **Note:** Both the inboard and outboard brakes will hold when hydraulic systems 2 and 3 are pressurized. If the hydraulic systems are off, only the inboard brakes will hold for a prolonged period.\n\n**Reference:**\nThis information can be found in the **Bombardier Challenger 605 - Landing Gear** manual, **Page 15**, and is illustrated in **Figure 15-10-9: Parking Brake** and **Figure 15-10-10: PARKING BRAKE Handle**.",
+                  "thought": null,
+                  "thought_signature": "AY89a1_Z__YSvS2ZgJnGWVdCi9-0R7eFml3S4zwhjZK0mh73YKtGouQpJQrzMu7lGX7gPvr-mwToMDcc81tZcivwGpOQjpDe9ZgqvXZ8Yf0Ct8Mtw3qUqvRyhqSn-pNiudJb_mGwGtOzOlH93Hdm6KRBFMJfrcRHFi27GGRrN_PWpvf68sL_qYK4H96z_10UsPAQ-A_LERbIdYTWlHDSVGRVRrtpx7aY32Jmt8vttvq3oS5sVVq9-gqa1iSX3iMlhTtoE5qFQ0p8OLIeJhOeTVGonxVZq-kJfwPv988i6schhjwuEqo1C77egfenxqo_ZTc0NubT0HCfRnuWqjkGP0SSMMT_zspxeXQ9eEG2qdK0yTpIKFyuLAGLaB--Te6bAVMQuTiz_ISciwmjlp_W3hO3QJy3XuJ2oPFP11j_mIDlPYFqjiwsGwSKra6ahqe8lkQDPvdMud4fqDBXEMkZnuP3PGs8vbVFTa6bkyW8sJzvLeGZSF-nrLDgicSoJnhot9CC6EYZ69eYiKe7mC4aAO8c0JZ43uyQA9vRTQvYG_sUtAxO8LYg0cfq-7NmjbtZPg_CgbrqHh_t6vDquXiULhOsecYvgoWvgsYnjbdKkqAMxAVthAnhnE_GYjAnElrjT1B4wlt3J2ZfAGCa9wIA6HldAdgxGBKS51k1puNf2asmgUSarbpB-vTh7DTHBdZE-f36tEtjm_lYlGKOAjq720oo-rJA2D-kI0CkjOSK9AxFjzyhKcU0yA9W5gXurIJWVUw8AWcjzsOqfwybROQI4_YOXJ6y-C1PzZUxZ5I3ffvSo7DSI7EtwFvmV4anVcJtw3HRgRvTTsRKKSSHbSGDbCFW4ucOdl6_2nbCVesPvok0IGp3J0VBgjfGtnOKYjerxWD5QiJB7wy3VNhDDc0CTyQW9Wver4949DuasBIX4D2K5UL2R_MCHa6cBMpng-DyjxCT4LDt45zl6WYQ7gpWWJ3YePkzZbUYGjgQaI4qMcJHLk6G7QsN7kHT61IfuTRYL_9jYH9PVjUBgqiiaq2U0cf2VTuaiKVyanwS0fa2LaeUQ5uP-FNpUakQ6fWbUaf6GKhLJ-A-taifs7Q2YD8Ua6VEiCSfJwF3H2Gz513hhpyMnLIoFZ2Ux-A2rMWdmr0d",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1777925326.196678,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.\nYour goal is to provide helpful, accurate answers based ONLY on the provided documents.\nWhen answering:\n1. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it and describe it.\n2. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.\n3. Provide a clear reference to the document and page for proof.\n4. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).\n5. If you cannot find the information in the documents, state that you cannot find it. Do not make up information.\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": {
+                        "disable_attribution": null,
+                        "external_api": null,
+                        "vertex_ai_search": {
+                          "data_store_specs": null,
+                          "datastore": "projects/analytics-demo-cg/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents",
+                          "engine": null,
+                          "filter": null,
+                          "max_results": null
+                        },
+                        "vertex_rag_store": null
+                      },
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I want to turn on the parking brake, how do I do it",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "Because the agent did not perform any tool calls, there is no trusted evidence to verify the accuracy of the steps provided in the final answer. While the final answer appears to address the prompt, it cannot be verified according to the evaluation principles.",
+                    "score": 0.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "Although the final answer provides detailed instructions, it is not supported by any trusted evidence gathered through procedurally sound tool calls. Per the evaluation principles, a claim that cannot be unambiguously verified using evidence from tool calls must be judged as failing the property.",
+                    "score": 0.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___5c527a94-e4cd-49a0-978b-d15d13b03b26",
+      "session_details": {
+        "id": "___eval___session___5c527a94-e4cd-49a0-978b-d15d13b03b26",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "5ef9724b-751c-406d-8f4d-2af9a9acbebf"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I want to turn on the parking brake, how do I do it",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d73547da-54ad-47d6-869d-779aa0eb8dab",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "783d38de-76e9-4346-8744-5afc93d24eb0",
+            "timestamp": 1777925318.652498
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "To turn on the parking brake in a Bombardier Challenger 605, follow these steps:\n\n1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side.\n2.  **Pull the PARKING BRAKE handle.**\n3.  **Rotate the handle 90°** to the locked position.\n\n**Verification:**\n*   A **PARKING BRAKE ON** advisory message will appear on the EICAS to indicate normal engagement.\n*   **Note:** Both the inboard and outboard brakes will hold when hydraulic systems 2 and 3 are pressurized. If the hydraulic systems are off, only the inboard brakes will hold for a prolonged period.\n\n**Reference:**\nThis information can be found in the **Bombardier Challenger 605 - Landing Gear** manual, **Page 15**, and is illustrated in **Figure 15-10-9: Parking Brake** and **Figure 15-10-10: PARKING BRAKE Handle**.",
+                  "thought": null,
+                  "thought_signature": "AY89a1_Z__YSvS2ZgJnGWVdCi9-0R7eFml3S4zwhjZK0mh73YKtGouQpJQrzMu7lGX7gPvr-mwToMDcc81tZcivwGpOQjpDe9ZgqvXZ8Yf0Ct8Mtw3qUqvRyhqSn-pNiudJb_mGwGtOzOlH93Hdm6KRBFMJfrcRHFi27GGRrN_PWpvf68sL_qYK4H96z_10UsPAQ-A_LERbIdYTWlHDSVGRVRrtpx7aY32Jmt8vttvq3oS5sVVq9-gqa1iSX3iMlhTtoE5qFQ0p8OLIeJhOeTVGonxVZq-kJfwPv988i6schhjwuEqo1C77egfenxqo_ZTc0NubT0HCfRnuWqjkGP0SSMMT_zspxeXQ9eEG2qdK0yTpIKFyuLAGLaB--Te6bAVMQuTiz_ISciwmjlp_W3hO3QJy3XuJ2oPFP11j_mIDlPYFqjiwsGwSKra6ahqe8lkQDPvdMud4fqDBXEMkZnuP3PGs8vbVFTa6bkyW8sJzvLeGZSF-nrLDgicSoJnhot9CC6EYZ69eYiKe7mC4aAO8c0JZ43uyQA9vRTQvYG_sUtAxO8LYg0cfq-7NmjbtZPg_CgbrqHh_t6vDquXiULhOsecYvgoWvgsYnjbdKkqAMxAVthAnhnE_GYjAnElrjT1B4wlt3J2ZfAGCa9wIA6HldAdgxGBKS51k1puNf2asmgUSarbpB-vTh7DTHBdZE-f36tEtjm_lYlGKOAjq720oo-rJA2D-kI0CkjOSK9AxFjzyhKcU0yA9W5gXurIJWVUw8AWcjzsOqfwybROQI4_YOXJ6y-C1PzZUxZ5I3ffvSo7DSI7EtwFvmV4anVcJtw3HRgRvTTsRKKSSHbSGDbCFW4ucOdl6_2nbCVesPvok0IGp3J0VBgjfGtnOKYjerxWD5QiJB7wy3VNhDDc0CTyQW9Wver4949DuasBIX4D2K5UL2R_MCHa6cBMpng-DyjxCT4LDt45zl6WYQ7gpWWJ3YePkzZbUYGjgQaI4qMcJHLk6G7QsN7kHT61IfuTRYL_9jYH9PVjUBgqiiaq2U0cf2VTuaiKVyanwS0fa2LaeUQ5uP-FNpUakQ6fWbUaf6GKhLJ-A-taifs7Q2YD8Ua6VEiCSfJwF3H2Gz513hhpyMnLIoFZ2Ux-A2rMWdmr0d",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": {
+              "image_search_queries": null,
+              "grounding_chunks": [
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "WHEELS AND BRAKES\nDescription\nDual-wheel assemblies are installed on each main landing gear strut, and each main wheel is\nequipped with a carbon brake disc assembly. The nose gear has two wheels, and uses chine tires\nto eject ground water away from the aircraft engines. Components and Operation\nEach wheel of the main landing gear is equipped with self-adjusting multidisc carbon brakes. Hydraulic system 3 powers the brakes of the inboard wheels, and hydraulic system 2 powers the\nbrakes of the outboard wheels. A parking brake function is available at both the inboard and\noutboard brakes. Anti-skid protection is provided. Each main wheel has four fusible plugs that melt to prevent tire burst, in the event of an\noverheated wheel or brake condition. Brake application is initiated by pressing the brake pedals, which are mechanically linked to the\nfour associated brake control valves. The brake control valves meter hydraulic pressure to the\nbrakes through anti-skid control valves. During gear retraction, hydraulic pressure from the nose landing gear is directed to the brake\ncontrol valves to stop main wheel rotation (in-flight braking). In case of failure of hydraulic systems 2 or 3, accumulators in both hydraulic brake systems\nprovide pressure for approximately six brake applications with the anti-skid selected off. Loss of\neither hydraulic system 2 or 3 results in a 50% reduction in braking capability. \n...\nBraking remains\nsymmetrical, and anti-skid is available at the working brakes. Two brake wear indicator pins are installed on each brake assembly, to provide a visual indication\nof brake wear. When the end of the wear indicator pin is flush with the top of the indicator housing, the brakes should be serviced. NOTE\nThe brake wear indicator pins must be checked with the brakes\napplied, and hydraulic systems 2 and 3 pressurized. Bombardier Challenger 605 - Landing Gear Page 14 ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                },
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "WHEELS AND BRAKES\nDescription\nDual-wheel assemblies are installed on each main landing gear strut, and each main wheel is\nequipped with a carbon brake disc assembly. The nose gear has two wheels, and uses chine tires\nto eject ground water away from the aircraft engines. Components and Operation\nEach wheel of the main landing gear is equipped with self-adjusting multidisc carbon brakes. Hydraulic system 3 powers the brakes of the inboard wheels, and hydraulic system 2 powers the\nbrakes of the outboard wheels. A parking brake function is available at both the inboard and\noutboard brakes. Anti-skid protection is provided. Each main wheel has four fusible plugs that melt to prevent tire burst, in the event of an\noverheated wheel or brake condition. Brake application is initiated by pressing the brake pedals, which are mechanically linked to the\nfour associated brake control valves. The brake control valves meter hydraulic pressure to the\nbrakes through anti-skid control valves. During gear retraction, hydraulic pressure from the nose landing gear is directed to the brake\ncontrol valves to stop main wheel rotation (in-flight braking). In case of failure of hydraulic systems 2 or 3, accumulators in both hydraulic brake systems\nprovide pressure for approximately six brake applications with the anti-skid selected off. Loss of\neither hydraulic system 2 or 3 results in a 50% reduction in braking capability. \n...\nBraking remains\nsymmetrical, and anti-skid is available at the working brakes. Two brake wear indicator pins are installed on each brake assembly, to provide a visual indication\nof brake wear. When the end of the wear indicator pin is flush with the top of the indicator housing, the brakes should be serviced. NOTE\nThe brake wear indicator pins must be checked with the brakes\napplied, and hydraulic systems 2 and 3 pressurized. Bombardier Challenger 605 - Landing Gear Page 14 ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                }
+              ],
+              "grounding_supports": [
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 82,
+                    "end_index": 166,
+                    "part_index": null,
+                    "text": "1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 206,
+                    "end_index": 260,
+                    "part_index": null,
+                    "text": "3.  **Rotate the handle 90°** to the locked position."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 280,
+                    "end_index": 379,
+                    "part_index": null,
+                    "text": "*   A **PARKING BRAKE ON** advisory message will appear on the EICAS to indicate normal engagement."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    1,
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 380,
+                    "end_index": 488,
+                    "part_index": null,
+                    "text": "*   **Note:** Both the inboard and outboard brakes will hold when hydraulic systems 2 and 3 are pressurized."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 489,
+                    "end_index": 580,
+                    "part_index": null,
+                    "text": "If the hydraulic systems are off, only the inboard brakes will hold for a prolonged period."
+                  },
+                  "rendered_parts": null
+                }
+              ],
+              "retrieval_metadata": null,
+              "search_entry_point": null,
+              "web_search_queries": null,
+              "google_maps_widget_context_token": null,
+              "retrieval_queries": [
+                "Bombardier aircraft parking brake control figure diagram",
+                "Bombardier parking brake operation instructions manual"
+              ],
+              "source_flagging_uris": null
+            },
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "5ef9724b-751c-406d-8f4d-2af9a9acbebf"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 255,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 255
+                }
+              ],
+              "prompt_token_count": 199,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 199
+                }
+              ],
+              "thoughts_token_count": 273,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 727,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d73547da-54ad-47d6-869d-779aa0eb8dab",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "5ef9724b-751c-406d-8f4d-2af9a9acbebf"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "4f6bd26e-9b4c-4e76-b167-bdee6d38ceb9",
+            "timestamp": 1777925318.654001
+          }
+        ],
+        "last_update_time": 1777925318.654001
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1777925355.655047
+}

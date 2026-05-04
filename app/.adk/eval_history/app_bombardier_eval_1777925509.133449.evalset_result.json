@@ -1,0 +1,474 @@
+{
+  "eval_set_result_id": "app_bombardier_eval_1777925509.133449",
+  "eval_set_result_name": "app_bombardier_eval_1777925509.133449",
+  "eval_set_id": "bombardier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "bombardier_eval",
+      "eval_set_id": "bombardier_eval",
+      "eval_id": "brake_wear_indicator",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 0.5,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 0.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-5b7b98e5-b893-4758-9461-52120e3c3dea",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "According to the Bombardier Challenger 605 Landing Gear manual, the brake wear indicator is visually represented in **Figure 15−10−8**, titled \"**Brakes and Lower Main Gear Structure**,\" which can be found on **page 15** of the **CL605-LANDING_GEAR** document.\n\n### Description of the Brake Wear Indicator:\nThe system uses **two brake wear indicator pins** installed on each brake assembly to provide a visual indication of the carbon brake disc wear. \n\n*   **Visual Check:** The brakes are considered worn and require servicing when the end of the wear indicator pin is **flush with the top of the indicator housing**.\n*   **Important Procedure for Checking:** The manual notes that the brake wear indicator pins must be checked under specific conditions:\n    *   The **brakes must be applied**.\n    *   **Hydraulic systems 2 and 3** must be pressurized.\n\nFor more information on the brake system components and operation, you can refer to the **Wheels and Brakes** section on **page 14** of the same document.",
+                  "thought": null,
+                  "thought_signature": "AY89a18diBRM0N70jdrKwmV7jIR1eSQyXqr019z3pBoKP9ArzNkblEu2SzETpfnBPt_1nq4aWla62p8WPVme11EYPnmVIdwfsuNjqgQ3jAZwuex0Ll4mRZfSNqycf5SwpWsLSfFU5lQMP1cQS8z5HnwrjSyM_4x1IH5BW9quEgYqJ7MIeZ9bKDvaZgtjlsa93V_g5KOsBuqJo7BBn0neanYzizHUYfwWrdVwu0jipFoAFpT57sYxPiMeQZ9pKlONNumDgF1eQ2dsaUgxneCm7VX1lymuPvl4fpK1_dRPvtqb6BPi2ia83IYGY6loLUdsa7RKakawIayw4_EoYKeLRPLXfUUWfZPI28FMqTNCqg8N4tMottXjuDBs2hgp7UiqkQ0J7auKduwnmVFIyUOxuWRvjNaa7vyAMq9xDQTXQ4AtbNV_kF-EsdDOrMpjFqKQAwC7AHOyuYgVc7YmK61Hn8NKRa3Vsyq1c0K4KI7iSR-5oXoQdr5fjdyg7irT-EsrZzfjmltYpzaCO90y38Rq64DPUoQextI6_kYRpXpjH5cEPKkldBpGFaMMx-o9-NhuqK6zDvrJqwrCh4dRIfC-DPctA1VhmMdPza52LQTsXuOLgYMf-Sg0XEiHj8Twk7CVecxQlPeUjBTIveM1GPEwB9r6bPaiC5kSQfymssF-uw_QzZURxi0fbEernQ9tf8LSSkk7OZ-NNrtNZmeXwSrEIzzs-YRBno1noXH27LbP4QrJARufHv9ndpRLJg5La1frPzudttnG6EFOmY0k3d5-cQImhKzfRx7vJQWXHIn5qe18mnXYlyV0xa-a6xGyK0IvvoNsO03DEGZKZ4Y9p6x2aszuVRagBv0yLQM5y-Y3ZsSXrFwL7wEBFE4-zBg-VKq3",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1777925504.939161,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.\nYour goal is to provide helpful, accurate answers based ONLY on the provided documents.\nWhen answering:\n1. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it and describe it.\n2. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.\n3. Provide a clear reference to the document and page for proof.\n4. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).\n5. If you cannot find the information in the documents, state that you cannot find it. Do not make up information.\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": {
+                        "disable_attribution": null,
+                        "external_api": null,
+                        "vertex_ai_search": {
+                          "data_store_specs": null,
+                          "datastore": "projects/analytics-demo-cg/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents",
+                          "engine": null,
+                          "filter": null,
+                          "max_results": null
+                        },
+                        "vertex_rag_store": null
+                      },
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 0.5,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The agent failed to provide an image as requested by the user. While it described where an image could be found and provided textual details, it did not fulfill the specific request to \"Show me an image\".",
+                    "score": 0.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "Although the agent did not perform any tool calls to retrieve this data from the available datastore (a procedural flaw), the resulting information provided in the final answer is highly specific and helpful for a user seeking information about the brake wear indicator. It provides actionable details on how to check the indicator and where to find the official documentation.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___fe5a5feb-c883-4068-9fa2-25a8b599e9f9",
+      "session_details": {
+        "id": "___eval___session___fe5a5feb-c883-4068-9fa2-25a8b599e9f9",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "2ea3af54-0e04-47df-9e42-9e305360b8d3"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me an image of the brake Wear indicator",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-5b7b98e5-b893-4758-9461-52120e3c3dea",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "6fa62df7-6974-48ec-ab74-80efb52fe5d8",
+            "timestamp": 1777925488.54203
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "According to the Bombardier Challenger 605 Landing Gear manual, the brake wear indicator is visually represented in **Figure 15−10−8**, titled \"**Brakes and Lower Main Gear Structure**,\" which can be found on **page 15** of the **CL605-LANDING_GEAR** document.\n\n### Description of the Brake Wear Indicator:\nThe system uses **two brake wear indicator pins** installed on each brake assembly to provide a visual indication of the carbon brake disc wear. \n\n*   **Visual Check:** The brakes are considered worn and require servicing when the end of the wear indicator pin is **flush with the top of the indicator housing**.\n*   **Important Procedure for Checking:** The manual notes that the brake wear indicator pins must be checked under specific conditions:\n    *   The **brakes must be applied**.\n    *   **Hydraulic systems 2 and 3** must be pressurized.\n\nFor more information on the brake system components and operation, you can refer to the **Wheels and Brakes** section on **page 14** of the same document.",
+                  "thought": null,
+                  "thought_signature": "AY89a18diBRM0N70jdrKwmV7jIR1eSQyXqr019z3pBoKP9ArzNkblEu2SzETpfnBPt_1nq4aWla62p8WPVme11EYPnmVIdwfsuNjqgQ3jAZwuex0Ll4mRZfSNqycf5SwpWsLSfFU5lQMP1cQS8z5HnwrjSyM_4x1IH5BW9quEgYqJ7MIeZ9bKDvaZgtjlsa93V_g5KOsBuqJo7BBn0neanYzizHUYfwWrdVwu0jipFoAFpT57sYxPiMeQZ9pKlONNumDgF1eQ2dsaUgxneCm7VX1lymuPvl4fpK1_dRPvtqb6BPi2ia83IYGY6loLUdsa7RKakawIayw4_EoYKeLRPLXfUUWfZPI28FMqTNCqg8N4tMottXjuDBs2hgp7UiqkQ0J7auKduwnmVFIyUOxuWRvjNaa7vyAMq9xDQTXQ4AtbNV_kF-EsdDOrMpjFqKQAwC7AHOyuYgVc7YmK61Hn8NKRa3Vsyq1c0K4KI7iSR-5oXoQdr5fjdyg7irT-EsrZzfjmltYpzaCO90y38Rq64DPUoQextI6_kYRpXpjH5cEPKkldBpGFaMMx-o9-NhuqK6zDvrJqwrCh4dRIfC-DPctA1VhmMdPza52LQTsXuOLgYMf-Sg0XEiHj8Twk7CVecxQlPeUjBTIveM1GPEwB9r6bPaiC5kSQfymssF-uw_QzZURxi0fbEernQ9tf8LSSkk7OZ-NNrtNZmeXwSrEIzzs-YRBno1noXH27LbP4QrJARufHv9ndpRLJg5La1frPzudttnG6EFOmY0k3d5-cQImhKzfRx7vJQWXHIn5qe18mnXYlyV0xa-a6xGyK0IvvoNsO03DEGZKZ4Y9p6x2aszuVRagBv0yLQM5y-Y3ZsSXrFwL7wEBFE4-zBg-VKq3",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": {
+              "image_search_queries": null,
+              "grounding_chunks": [
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "The\nsystem becomes operational when a 35-knot wheel spin-up signal is generated, or a W0W\nsignal is present after a 5-second delay. The anti-skid system is functional down to a minimum\nwheel spin of 10 knots. Anti-Skid Test\nThe TEST button on the LDG GEAR control panel initiates a built-in test of the ASCU and\nassociated components, during which time the A/SKID IN TEST advisory EICAS message will\nbe displayed. The test can only be performed with the parking brake off. Bombardier Challenger 605 - Landing Gear Page 16 \n...\nWHEELS AND BRAKES (CONT'D) PARKING BRAKE Handle\nFigure 15−10−10 Anti-Skid System\nThe anti-skid system consists of a dual-channel (inboard and outboard) anti-skid control unit\n(ASCU), four axle-mounted speed transducers, and four anti-skid control valves. The anti-skid\nsystem independently controls the braking of each main wheel, by modulating the hydraulic\npressure applied to each brake. Rotational speed of each wheel and its rate of deceleration are sensed by the wheel speed\ntransducers, and the data is transmitted to the ASCU. The ASCU modulates the hydraulic\npressure at the brake to prevent wheel lockup. Comparing the speed of paired wheels provides a second level of anti-skid protection. The\ninboard wheels form one pair, the outboard wheels the other. If, for example, the right inboard\nwheel rotates at a significantly slower speed than the left inboard, the ASCU releases the brake\non the slower turning wheel. When both paired wheels return to the same speed, the ASCU\nreapplies the released brake. The ARMED switch on the ANTI-SKID control panel arms the system when the parking brake is\nnot engaged, and both MLG are down and locked. In air mode (no WOW signal), the ASCU\nconfigures the anti-skid valves to full brake dump, to prevent wheel lockup at touchdown. ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                },
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "The\nsystem becomes operational when a 35-knot wheel spin-up signal is generated, or a W0W\nsignal is present after a 5-second delay. The anti-skid system is functional down to a minimum\nwheel spin of 10 knots. Anti-Skid Test\nThe TEST button on the LDG GEAR control panel initiates a built-in test of the ASCU and\nassociated components, during which time the A/SKID IN TEST advisory EICAS message will\nbe displayed. The test can only be performed with the parking brake off. Bombardier Challenger 605 - Landing Gear Page 16 \n...\nWHEELS AND BRAKES (CONT'D) PARKING BRAKE Handle\nFigure 15−10−10 Anti-Skid System\nThe anti-skid system consists of a dual-channel (inboard and outboard) anti-skid control unit\n(ASCU), four axle-mounted speed transducers, and four anti-skid control valves. The anti-skid\nsystem independently controls the braking of each main wheel, by modulating the hydraulic\npressure applied to each brake. Rotational speed of each wheel and its rate of deceleration are sensed by the wheel speed\ntransducers, and the data is transmitted to the ASCU. The ASCU modulates the hydraulic\npressure at the brake to prevent wheel lockup. Comparing the speed of paired wheels provides a second level of anti-skid protection. The\ninboard wheels form one pair, the outboard wheels the other. If, for example, the right inboard\nwheel rotates at a significantly slower speed than the left inboard, the ASCU releases the brake\non the slower turning wheel. When both paired wheels return to the same speed, the ASCU\nreapplies the released brake. The ARMED switch on the ANTI-SKID control panel arms the system when the parking brake is\nnot engaged, and both MLG are down and locked. In air mode (no WOW signal), the ASCU\nconfigures the anti-skid valves to full brake dump, to prevent wheel lockup at touchdown. ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                }
+              ],
+              "grounding_supports": [
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 458,
+                    "end_index": 623,
+                    "part_index": null,
+                    "text": "*   **Visual Check:** The brakes are considered worn and require servicing when the end of the wear indicator pin is **flush with the top of the indicator housing**."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0,
+                    1
+                  ],
+                  "segment": {
+                    "start_index": 805,
+                    "end_index": 859,
+                    "part_index": null,
+                    "text": "*   **Hydraulic systems 2 and 3** must be pressurized."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 861,
+                    "end_index": 1015,
+                    "part_index": null,
+                    "text": "For more information on the brake system components and operation, you can refer to the **Wheels and Brakes** section on **page 14** of the same document."
+                  },
+                  "rendered_parts": null
+                }
+              ],
+              "retrieval_metadata": null,
+              "search_entry_point": null,
+              "web_search_queries": null,
+              "google_maps_widget_context_token": null,
+              "retrieval_queries": [
+                "Bombardier CRJ brake wear indicator location and appearance manual",
+                "Bombardier Challenger Global brake wear indicator image description manual",
+                "Bombardier airplane manual brake wear indicator diagram figure",
+                "Bombardier Challenger 605 Figure 15-10-8 Brakes and Lower Main Gear Structure brake wear indicator",
+                "How to check brake wear Bombardier Challenger 605 indicator pin figure"
+              ],
+              "source_flagging_uris": null
+            },
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "2ea3af54-0e04-47df-9e42-9e305360b8d3"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 507,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 507
+                }
+              ],
+              "prompt_token_count": 194,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 194
+                }
+              ],
+              "thoughts_token_count": 1044,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1745,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-5b7b98e5-b893-4758-9461-52120e3c3dea",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "2ea3af54-0e04-47df-9e42-9e305360b8d3"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "15cf7612-dd8a-43a7-8972-efe638acfb3e",
+            "timestamp": 1777925488.5427752
+          }
+        ],
+        "last_update_time": 1777925488.5427752
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1777925509.133449
+}

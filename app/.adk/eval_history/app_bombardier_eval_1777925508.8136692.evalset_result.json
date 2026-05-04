@@ -1,0 +1,468 @@
+{
+  "eval_set_result_id": "app_bombardier_eval_1777925508.8136692",
+  "eval_set_result_name": "app_bombardier_eval_1777925508.8136692",
+  "eval_set_id": "bombardier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "bombardier_eval",
+      "eval_set_id": "bombardier_eval",
+      "eval_id": "bracket_dimension",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 0.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 0.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-d4bcaf66-28f4-4b99-bc88-26a99c009f7d",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I need to change the bracket, give me the dimension of the bracket (length of the bracket)",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Based on the provided technical drawing **\"Aerospace_Technical_Drawing_Assembly (1).pdf\"**, the dimensions for the **Main Bracket (Part 01-A)** are as follows:\n\n*   **Length:** 150.00 mm ± 0.05\n*   **Width:** 80.00 mm\n\n### Reference Details:\n*   **Document:** Aerospace Component Specification (Project: CubeSat Alpha-1 | Primary Mounting Assembly)\n*   **Figure:** Figure 1: MAIN BRACKET (PART 01-A)\n*   **Part Number:** 01-A-BRK\n*   **Material:** Al 7075-T651\n*   **Page:** 1 of 1\n\nThe assembly procedure for this bracket involves cleaning it with Acetone (per ASTM D235) and aligning datum A of Part 01-A with the central axis of Part 01-B before fastening with NAS1351C3-10 bolts.",
+                  "thought": null,
+                  "thought_signature": "AY89a18fsU-06iaENIiVuiNEAzukhVNpgCIMrWslczBXb4wA6XUESaOC2smPY4PJQRP28eXoInjEdVkz9boS0706ccHNlaKqamd9BzftkZE9Zi-v93e_jwk57FTia-tmstX4zT3Fo9uqao5Fy3BJS71UbXUJFHJYh6QZK7CyWDDPjSa9aFxvTe5nQrOL6vmv6kMxHSG-jOWckV3eBO7QbDGklCUnNRDJSyMl85c7aw8uVkDCuTCrRERW50wTbmDE51c7ovXlfTeEZ_NSAYQdA74Q-yskDUvSA97MtpBlw1AZRpoWD2598J5vwr9MybaPK-kVzKaAonwZ5od26wLd3-t9Mo1FKLJ7LjJsebxpvNkefXdqgpisp5we5Q82EwBL1uv8jHyT0vjWaM5pTxMs9q872rQv1KiYxK5OSflhM0m-zt9YuZagr7Y3evWRTaACEzExFirWF3INoKXrYhLXSwh-lr-uYQbCEGGMV6O2xiNIiKdK3MX85U7N3A-bxhhScEUnm_l8kt9sYCuxVr9_kQe6G4d1FryfmG5YizodW_HGZwkV8vDIm_Q_KZXRXBjGgs6kl0k3qr-V2fHvIPEeqz4WvGFJNzV5lI49_QG9ST6XKMX51Ul6mMx90KTbGca_sMwkNR-AzqAamIdEEsZxET3_3xP5jngxuG_XFZ3EAminb3V5ZHUwy9UOCAptS0b8Bm1i1DcAg9h3pygXgvaFMDVplp98uJBbnKq0SXOZnI1twgMo8RsTGehi94v-XnHMpOzjPDl07_p4qj-PjI8xfwgkK1i8bomATeQCZedWjrLwbWJfN3JA6kKBBSXxGnETOECGoq3n7wFG_goRw2j-23QQF22rlq3wsA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1777925498.761624,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.\nYour goal is to provide helpful, accurate answers based ONLY on the provided documents.\nWhen answering:\n1. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it and describe it.\n2. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.\n3. Provide a clear reference to the document and page for proof.\n4. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).\n5. If you cannot find the information in the documents, state that you cannot find it. Do not make up information.\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": {
+                        "disable_attribution": null,
+                        "external_api": null,
+                        "vertex_ai_search": {
+                          "data_store_specs": null,
+                          "datastore": "projects/analytics-demo-cg/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents",
+                          "engine": null,
+                          "filter": null,
+                          "max_results": null
+                        },
+                        "vertex_rag_store": null
+                      },
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I need to change the bracket, give me the dimension of the bracket (length of the bracket)",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The agent provided a detailed final answer without performing any tool calls to verify the dimensions of the bracket from the company's data store. Since there are no procedurally sound tool calls to provide evidence for the dimensions cited (150.00 mm), the information cannot be verified and is considered hallucinatory in the context of the tool use requirements.",
+                    "score": 0.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "While the response appears helpful on the surface, it provides specific technical dimensions and part numbers that were not retrieved from the allowed tools or the user prompt. Because the information cannot be verified through trusted evidence from tool calls, it is not considered helpful or useful in a reliable manner.",
+                    "score": 0.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___b0172ff6-7b5b-446a-8ee2-3755e4be09e5",
+      "session_details": {
+        "id": "___eval___session___b0172ff6-7b5b-446a-8ee2-3755e4be09e5",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "70594333-8f5e-40c8-a47e-eddbe5c11446"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "I need to change the bracket, give me the dimension of the bracket (length of the bracket)",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d4bcaf66-28f4-4b99-bc88-26a99c009f7d",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "34f303b3-0fb2-4767-afa5-632e042ca17d",
+            "timestamp": 1777925488.528951
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Based on the provided technical drawing **\"Aerospace_Technical_Drawing_Assembly (1).pdf\"**, the dimensions for the **Main Bracket (Part 01-A)** are as follows:\n\n*   **Length:** 150.00 mm ± 0.05\n*   **Width:** 80.00 mm\n\n### Reference Details:\n*   **Document:** Aerospace Component Specification (Project: CubeSat Alpha-1 | Primary Mounting Assembly)\n*   **Figure:** Figure 1: MAIN BRACKET (PART 01-A)\n*   **Part Number:** 01-A-BRK\n*   **Material:** Al 7075-T651\n*   **Page:** 1 of 1\n\nThe assembly procedure for this bracket involves cleaning it with Acetone (per ASTM D235) and aligning datum A of Part 01-A with the central axis of Part 01-B before fastening with NAS1351C3-10 bolts.",
+                  "thought": null,
+                  "thought_signature": "AY89a18fsU-06iaENIiVuiNEAzukhVNpgCIMrWslczBXb4wA6XUESaOC2smPY4PJQRP28eXoInjEdVkz9boS0706ccHNlaKqamd9BzftkZE9Zi-v93e_jwk57FTia-tmstX4zT3Fo9uqao5Fy3BJS71UbXUJFHJYh6QZK7CyWDDPjSa9aFxvTe5nQrOL6vmv6kMxHSG-jOWckV3eBO7QbDGklCUnNRDJSyMl85c7aw8uVkDCuTCrRERW50wTbmDE51c7ovXlfTeEZ_NSAYQdA74Q-yskDUvSA97MtpBlw1AZRpoWD2598J5vwr9MybaPK-kVzKaAonwZ5od26wLd3-t9Mo1FKLJ7LjJsebxpvNkefXdqgpisp5we5Q82EwBL1uv8jHyT0vjWaM5pTxMs9q872rQv1KiYxK5OSflhM0m-zt9YuZagr7Y3evWRTaACEzExFirWF3INoKXrYhLXSwh-lr-uYQbCEGGMV6O2xiNIiKdK3MX85U7N3A-bxhhScEUnm_l8kt9sYCuxVr9_kQe6G4d1FryfmG5YizodW_HGZwkV8vDIm_Q_KZXRXBjGgs6kl0k3qr-V2fHvIPEeqz4WvGFJNzV5lI49_QG9ST6XKMX51Ul6mMx90KTbGca_sMwkNR-AzqAamIdEEsZxET3_3xP5jngxuG_XFZ3EAminb3V5ZHUwy9UOCAptS0b8Bm1i1DcAg9h3pygXgvaFMDVplp98uJBbnKq0SXOZnI1twgMo8RsTGehi94v-XnHMpOzjPDl07_p4qj-PjI8xfwgkK1i8bomATeQCZedWjrLwbWJfN3JA6kKBBSXxGnETOECGoq3n7wFG_goRw2j-23QQF22rlq3wsA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": {
+              "image_search_queries": null,
+              "grounding_chunks": [
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/86debe6ef22edc78ca7a51075bbe456b",
+                    "rag_chunk": null,
+                    "text": "AEROSPACE COMPONENT SPECIFICATION\nPROJECT: CUBESAT ALPHA-1 | PRIMARY MOUNTING ASSEMBLY DOC ID: AS-2026-TR-042\nREVISION: B (01-MAY-2026) FIG 1: MAIN BRACKET (PART 01-A) FIG 2: EXPLODED INTERFACE VIEW ASSEMBLY PROCEDURES\nDegrease: Clean Part 01-A and 01-B using Acetone per ASTM D235. Alignment: Align datum A of Part 01-A with central axis of Part 01-B.\nFastening: Install NAS1351C3-10 bolts (Qty 4) with MIL-DTL-5541 Finish. Torque: Tighten to 4.5 Nm ± 0.2 Nm. Apply Torque Stripe (Orange). Testing: Conduct 10g vibration sweep; no loss of clamping force permitted. BILL OF MATERIALS (BOM)\nITEM QTY PART NO. MATERIAL 1 1 01-A-BRK Al 7075-T651 2 2 01-B-FLG Ti-6Al-4V 3 8 NAS1149 SS 304 150.00 ± 0.05 80.00 2x Ø6.0 H7 CL ASSEMBLY 1. 2. 3. 4. 5. TOLERANCES UNLESS SPECIFIED:\nX.X ± 0.1 | X.XX ± 0.05 | ANGULAR ± 0.5° AEROSPACE SYSTEMS DIV. DEPARTMENT OF ENGINEERING DRAWN BY: G. AI APPROVED: CHIEF ENG. SCALE: 1:2 UNITS: MM SHEET: 1 OF 1 SIZE: A4 ",
+                    "title": "Aerospace_Technical_Drawing_Assembly (1)",
+                    "uri": "gs://bombardier_test_agent/plan-agent/Aerospace_Technical_Drawing_Assembly (1).pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                }
+              ],
+              "grounding_supports": [
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 161,
+                    "end_index": 194,
+                    "part_index": null,
+                    "text": "*   **Length:** 150.00 mm ± 0.05"
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 195,
+                    "end_index": 218,
+                    "part_index": null,
+                    "text": "*   **Width:** 80.00 mm"
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 431,
+                    "end_index": 461,
+                    "part_index": null,
+                    "text": "*   **Material:** Al 7075-T651"
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 484,
+                    "end_index": 684,
+                    "part_index": null,
+                    "text": "The assembly procedure for this bracket involves cleaning it with Acetone (per ASTM D235) and aligning datum A of Part 01-A with the central axis of Part 01-B before fastening with NAS1351C3-10 bolts."
+                  },
+                  "rendered_parts": null
+                }
+              ],
+              "retrieval_metadata": null,
+              "search_entry_point": null,
+              "web_search_queries": null,
+              "google_maps_widget_context_token": null,
+              "retrieval_queries": [
+                "Bombardier airplane bracket dimensions length manual figure",
+                "Bombardier bracket part number dimensions length manual"
+              ],
+              "source_flagging_uris": null
+            },
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "70594333-8f5e-40c8-a47e-eddbe5c11446"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 324,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 324
+                }
+              ],
+              "prompt_token_count": 205,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 205
+                }
+              ],
+              "thoughts_token_count": 782,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1311,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d4bcaf66-28f4-4b99-bc88-26a99c009f7d",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "70594333-8f5e-40c8-a47e-eddbe5c11446"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "247b74f9-5e45-4249-a48a-734abe3c6e1e",
+            "timestamp": 1777925488.5396311
+          }
+        ],
+        "last_update_time": 1777925488.5396311
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1777925508.8136692
+}

@@ -1,0 +1,508 @@
+{
+  "eval_set_result_id": "app_bombardier_eval_1777925295.851947",
+  "eval_set_result_name": "app_bombardier_eval_1777925295.851947",
+  "eval_set_id": "bombardier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "bombardier_eval",
+      "eval_set_id": "bombardier_eval",
+      "eval_id": "brake_pressure_location",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8
+          },
+          "custom_function_path": null,
+          "score": 0.0,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-102f8975-d96b-42d9-b531-a956e5ed8842",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me on the cockpit, where I can see the brake pressure so that I can turn it on",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "On the Bombardier Challenger 605, you can monitor the brake pressure and engage the parking brake by following the details below:\n\n### 1. Where to See Brake Pressure\nYou can view both the **Inboard and Outboard Brake Pressure** on the **HYDRAULIC Synoptic Page** of the EICAS (Engine Instrument and Crew Alerting System).\n*   **Reference:** Figure 15-10-8, *HYDRAULIC Synoptic Page (Inboard and Outboard Brake Pressure)*.\n*   **Location:** This is found in the **CL605-LANDING_GEAR** document on **page 15**.\n\n### 2. How to Turn on the Parking Brake\nTo apply the parking brake, follow these precise steps:\n1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side.\n2.  **Pull the PARKING BRAKE handle** (located in the cockpit, typically on the center pedestal).\n3.  **Rotate the handle 90°** to the locked position.\n\n**Confirmation:**\n*   When correctly engaged, a green **PARKING BRAKE ON** advisory message will appear on the EICAS.\n*   **Reference:** Figure 15-10-9, *Parking Brake*, and the \"Parking Brake Handle\" section in the **CL605-LANDING_GEAR** document, **page 15**.\n\n### Important Notes:\n*   **Pressure Requirements:** Both inboard and outboard brakes will hold as long as hydraulic systems 2 and 3 are pressurized. If the hydraulic systems are turned off, only the inboard brakes will hold for a prolonged period.\n*   **Low Pressure Warning:** If the pressure in either the inboard or outboard system drops below **1,015 psi**, an **INBD BRAKE PRESS** or **OUTBD BRAKE PRESS** caution message will be displayed (CL605-LANDING_GEAR, page 19).",
+                  "thought": null,
+                  "thought_signature": "AY89a19-ZPAl7is6jEjE-aogORK1wsPihMvtWbqPJMNoNAGJjbM1tuXQFtXmERI5lleozXZ9kzceeysoHiMYCQXF1ytiH3hAgtfr0UEUlZi49MExlKWrWFoeZzmvR-0hpOkBFeMxyN_Mh3jfSHhffnIQfXGSZ2pHZ2UlGCdGASN0_ujKzJUhPwWoroR02o2tbxTeLpta91h8BdqHJZelgHDMlRseL7FTzEk1Gx24nHJ3RYasQKM27bhm-NaGVQfgrcZp2juaS_Amqhj8LVaKXrbziMB1JD6qP6ERJaEKqi_-GaQePcqqjxDBvD3GF29GT5e0jtch1JvExXI1iZkTyJFf-wBFEhYyNwa6zPOXRo3vFDWZqMsqyY5IfNAVxSdn_mA4n8BlpTd_1CZHifvypPzllEEBKU-9-POnpO1QJStXBJtDDgs-R3cvyf6X5tydGG3dZskDoW-ZueleLITa92VFMW4CDWJC6_626-WuSe8TEWFX_AYy1DMOEyBjBZjwpvVhcKGm9tOrDcCt5i0nDKKxv6hSc0t-x1ZpuXgiAIdVAih7TY7sDjCtyofCinqu6HdSjwv1EFwVFhplla3MNqKGI6gwPeFUcXLYmsiS5ZTqb5DpsIICXdH2mHQkBUnHg9ukgToPUxAkiA-2cuV4UGvQZ1VPSYlbzJyupTKzkKTQi6EU-G-K6TonfBhCYyaJR2Irz8Y46PUTII_t8M7MVKyoXgdu5YYq2h31qbPJAD2mWk2jNbcrgSPyHQv4PMxOnKi2nm-DOgVmboAQn46lOqqTYnk8CyFaRmpNjF4MLRy9fMUmcRNiPhwzG7BMyq76xKLGF1XxM57HuPIUoH4e-gynUM8JTMifChfKYQYj8v0WKwlowaH4BMSPeSL2_YBye8Nnv7Kdue8FH9rLLmsdl5R-RUWqPVqDkA9VR5z-Qe_uWqYk8mE8YVJHuk-HFS5-TGfUs5wB2g5YK2gC8jzWcDJs-mM5c30hmx2J5N--rUK_mf_aEDx-gJpVwV-wtGCinjIaySLegOOJzVUBx9F7JNClDy59tI-H80AWGu2vbGgPGN5q7JGhjrv4QX0mZ3romjHDi3x1fnPSM-YnuMM6DDfgrbX0ZJtW8ayV78wVqVOwGJmHJ7nML8mswCQK72-eoOuB3PlirMqGjErp8nyBOE9htFBHwOcOQuBWVAAu9m7pe67B06AiCXhveuHlLvbvb1K8Iqsb5XO2mPjgVqr_UDhoCxyASQywBposTi4faIgq_gQ52FGm4mYIqILC8mOcnBTYGg9pJK_tF9OplW3MIuQus9jWrJYfFMoJTDaOH2NAMVOxW1n1lCrlla1a_N9lFB8yJu06ij7P0V53cLhnm-o1uszpUhVafSI5JF4FBKe9nCIJ9skyC2aqY8PbLrVWk5LnArja_2Ls6T_ully8bSYpx7oVy_aQAfkXE6GJntokoJ64_K9sN6ZGuU2yVeZYxp-RDhZ5FNso6MaaH2kQ3ei_vmlDTqgH3MeJ1jwAtePSMI4C8KN9SkmgfTRRNFO5qgZvbEFyI2tQ2AZ0iO-PQEBRkx1zQc3SkNwH-YiwjTjnGAGeba_FFOSRyOLbwbWqnEjtka73lU8dXRCpXVAX-8UGV84jogmhCzSvSYyA8IEIxSfBcBQsgRiKxlXyt37Fli567EM7LqLv-1hTF8gmAiS34WreUs3MLjho9_EX3JdH4-GfV7TN3CiTwOtRF7LGrHsF37T0gsR784yjWOBijHL0kQr0-Uy5F2LYs0uL1w7AjlRfcM7i3V3JmSKv-R7O_zIMo2R-uld7Eiz44G_AUah_J5Whh5DzMXF_wRZn26hEJG0vAotVlW9OScx9VEsZfaUZCcTck2WtIjAO6ItUZu85ckMaDusX3kpGVIrzZbKwNT9UJI0rx_T7GDLWurK6rYIjJym0qoAO8URLl1GtMSAUCe-b8gbOkY9AtuRizA_LOyPvGkfiZj18OCCTpiYW9gEQ7fTPgfjqE3nB18ntHo48yjd8mwvgcRv2U38StXHuUJtGRFbpm4NtMFBwQCeDIi_-wvfSD2t0j3nZvLS2_XZyKy6UcfDcuClG4akSHrYf7qhPXiUq76AT3v0v7SYkxnLw3tSEACuaKzaGYHdEX-AymKjrgrcZUasL1IBzpAQH5YSYcauJLBCQpNXEwzi9hb9M5Zafjve54qs6H2Ptbg-2oRNcG_OqkGBzQ-Z-b3-06iDd5L1EYfPRSJsqR-PAstE9QVNZnG0nfzIhnj4cWhxn2djH_2vhhCiXOxBqXWfYdztUK05DF3-74XowXS5omucbwWVa-i_6xVBh7WWoLjpSLVYRhgAtl3gflSdDKhRIwz-3MsCivE034Ydna2Wt74Rb6C-dWGfNsQh0A22Qnt0QV89H9CKDjD4_-jgcXcaHSjCyxkiCUBp9RJC4iGtaxynnsIVIJZuMxaSyfldT-wTsac40AuJFqrKO5QFxpTP874-feQdXEZ7VTyT4vQQdHJknx72XebJ1KttWrnxxGZl_zs14sriNUO_Y_zlSkNhsqUv555d7-M0h7P9-z-nw4vqLZ8bbDxEnZc1ZbaqNgskLdx5QIVs4WJRtsFVoi3IQuyt__4jqjGrKVete0FZoRRIZ_mOwdaz9r1wSiJpJoqkQX173zkee2pYahwGP_8VU1_Mmuxg5kkk4JUhDGG8SRGrfgSi4AXGTnL_-cwOhqMCxr9NAtgNHymhAEMBP-xOFJPqr-eBv9862kUQCXbIwCr7Hn5xq1znq5PwnivCayT4c33zwxRfEIIJZGxaMPJax67n9RGVSqS0djeJehx6NAhaMZR-1oHmHiO7IksNkZn789dZlDATZIXqgppBKYzS2UbcilnM9OsOrLBT7VmZghp-no8jKSW1mNSlxKdbvVoYEtPSRQcRA4EkAfzi98tbT1npMRbMWraCX55WjRRJcX7zBgWSPVA1l5Y_eaf78VlxYtGJpUbOd_FT7c1Bw0Y1qEegyAbXQKxYrSyYxt0VxwkKkmtGaGvwVjw-nluvMD1DqKrFWmVYiKRrOnWjjtdxkFKHtUZWT9PFqvQWumJvYlqPggQ3CvGRkQccbmsaApY-3k-KOxQWgHjpkoAbMfzx5AGxiazZ8cUfGDFw6bM6_LVl_fdcVaT8WcDoiLUjeeWgfzJJHdxCy8uhhpBG94H-x3M2UtkreJdPYakBjCTMrbG-XEnaDpcBr2CX1gCDtypWC6airBZ5BXr67jYSNlB9IRoOCWl2l42miQgkUjdUKeb4AFhZOPiCJfHU3JLVz2tsPXC8RVZ-R6SESxyw7QAN7_SUTywBCNrs1RheQbicIb5SGMeFx1iv7PiijtkLa63NnoHXUwftv0qWZgAXRgN2D_S8PBopAIljagUut7iZMbKXzDI38taTp7QvULSQDfUBALg0jeiwbAa585ExEaJsA-BTYwLrmi1xlLjeGSOrWCYfEZdqRC5Rzbjrbs8p0k1_QbWStkpdTfuYMs2xLXreOVt3m8mtgcSc1yZBe1ZJRW3b_eiQ64Ph6bi_o2CcJ6PgOVJXK5kN6wEx5933wctWyVNLaaf9dbhHZWauz643KWVH9P83w29WzluS64X-9Js7RZ_1Ck8xlg1R98dSPcUXsP7Yjqv6LuO6DWLu4NJlNtrT7ZJbq6UhbpcQfJ-v4Y3yir55fw_Ua5ERbfiFcCBeSBVTX7C4ukJ6SCL6PEKKGRip6C58Ib7qCChCV3HCagdbyU0yPTB_GBunU8Ygf7mcZQmF9LEGaLc1fSc5hldjjOMUS31lC54UVVuVA-F23Ucl1ohzghvyDZH-4xLjsVl7a_4qBMORr3LEZ01Ax3NT-XpbUyadhfB8ydd8yhje-Uel3XUzB_rhKs1zvILhCLitvTVc_QHN8gy_DrMZ9CPackNwh-BOg2mRVhjjbZA5kZHhatdq17snNWF5NsUyhWhbe6Zq67bxXGyLN0VsuGkXY1O6ov9m1qEzUk6GtdbYDWIqm1JNyqNXYoZ7_BFdRpKD4_ful8nQ9hHrpUWNQEOQta1iMtssNvHDHn9TtTFpatHLsJRPIjFdXPI7sveTsdZDb59xuTU-LwmgF6HIISJgqsQS11oLoHGILR3CTn4CvPkDFuOsF1mQqMVdsKXuZ52LrTZC4K6AFupt9HVmyWWo8Huj23DQzGwmibH9ZTny-Z5GrZ5fMY8J2IUFbAA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1777925278.2233129,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.\nYour goal is to provide helpful, accurate answers based ONLY on the provided documents.\nWhen answering:\n1. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it and describe it.\n2. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.\n3. Provide a clear reference to the document and page for proof.\n4. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).\n5. If you cannot find the information in the documents, state that you cannot find it. Do not make up information.\n\nYou are an agent. Your internal name is \"root_agent\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": {
+                        "disable_attribution": null,
+                        "external_api": null,
+                        "vertex_ai_search": {
+                          "data_store_specs": null,
+                          "datastore": "projects/analytics-demo-cg/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents",
+                          "engine": null,
+                          "filter": null,
+                          "max_results": null
+                        },
+                        "vertex_rag_store": null
+                      },
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me on the cockpit, where I can see the brake pressure so that I can turn it on",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8
+              },
+              "custom_function_path": null,
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___0284ff59-9043-4552-b5af-3ad48a606cf9",
+      "session_details": {
+        "id": "___eval___session___0284ff59-9043-4552-b5af-3ad48a606cf9",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "748d3de9-4d06-456b-a23d-518c02e61518"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Show me on the cockpit, where I can see the brake pressure so that I can turn it on",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-102f8975-d96b-42d9-b531-a956e5ed8842",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "62d14897-8e32-4071-b779-525a84f8ac63",
+            "timestamp": 1777925265.561634
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "On the Bombardier Challenger 605, you can monitor the brake pressure and engage the parking brake by following the details below:\n\n### 1. Where to See Brake Pressure\nYou can view both the **Inboard and Outboard Brake Pressure** on the **HYDRAULIC Synoptic Page** of the EICAS (Engine Instrument and Crew Alerting System).\n*   **Reference:** Figure 15-10-8, *HYDRAULIC Synoptic Page (Inboard and Outboard Brake Pressure)*.\n*   **Location:** This is found in the **CL605-LANDING_GEAR** document on **page 15**.\n\n### 2. How to Turn on the Parking Brake\nTo apply the parking brake, follow these precise steps:\n1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side.\n2.  **Pull the PARKING BRAKE handle** (located in the cockpit, typically on the center pedestal).\n3.  **Rotate the handle 90°** to the locked position.\n\n**Confirmation:**\n*   When correctly engaged, a green **PARKING BRAKE ON** advisory message will appear on the EICAS.\n*   **Reference:** Figure 15-10-9, *Parking Brake*, and the \"Parking Brake Handle\" section in the **CL605-LANDING_GEAR** document, **page 15**.\n\n### Important Notes:\n*   **Pressure Requirements:** Both inboard and outboard brakes will hold as long as hydraulic systems 2 and 3 are pressurized. If the hydraulic systems are turned off, only the inboard brakes will hold for a prolonged period.\n*   **Low Pressure Warning:** If the pressure in either the inboard or outboard system drops below **1,015 psi**, an **INBD BRAKE PRESS** or **OUTBD BRAKE PRESS** caution message will be displayed (CL605-LANDING_GEAR, page 19).",
+                  "thought": null,
+                  "thought_signature": "AY89a19-ZPAl7is6jEjE-aogORK1wsPihMvtWbqPJMNoNAGJjbM1tuXQFtXmERI5lleozXZ9kzceeysoHiMYCQXF1ytiH3hAgtfr0UEUlZi49MExlKWrWFoeZzmvR-0hpOkBFeMxyN_Mh3jfSHhffnIQfXGSZ2pHZ2UlGCdGASN0_ujKzJUhPwWoroR02o2tbxTeLpta91h8BdqHJZelgHDMlRseL7FTzEk1Gx24nHJ3RYasQKM27bhm-NaGVQfgrcZp2juaS_Amqhj8LVaKXrbziMB1JD6qP6ERJaEKqi_-GaQePcqqjxDBvD3GF29GT5e0jtch1JvExXI1iZkTyJFf-wBFEhYyNwa6zPOXRo3vFDWZqMsqyY5IfNAVxSdn_mA4n8BlpTd_1CZHifvypPzllEEBKU-9-POnpO1QJStXBJtDDgs-R3cvyf6X5tydGG3dZskDoW-ZueleLITa92VFMW4CDWJC6_626-WuSe8TEWFX_AYy1DMOEyBjBZjwpvVhcKGm9tOrDcCt5i0nDKKxv6hSc0t-x1ZpuXgiAIdVAih7TY7sDjCtyofCinqu6HdSjwv1EFwVFhplla3MNqKGI6gwPeFUcXLYmsiS5ZTqb5DpsIICXdH2mHQkBUnHg9ukgToPUxAkiA-2cuV4UGvQZ1VPSYlbzJyupTKzkKTQi6EU-G-K6TonfBhCYyaJR2Irz8Y46PUTII_t8M7MVKyoXgdu5YYq2h31qbPJAD2mWk2jNbcrgSPyHQv4PMxOnKi2nm-DOgVmboAQn46lOqqTYnk8CyFaRmpNjF4MLRy9fMUmcRNiPhwzG7BMyq76xKLGF1XxM57HuPIUoH4e-gynUM8JTMifChfKYQYj8v0WKwlowaH4BMSPeSL2_YBye8Nnv7Kdue8FH9rLLmsdl5R-RUWqPVqDkA9VR5z-Qe_uWqYk8mE8YVJHuk-HFS5-TGfUs5wB2g5YK2gC8jzWcDJs-mM5c30hmx2J5N--rUK_mf_aEDx-gJpVwV-wtGCinjIaySLegOOJzVUBx9F7JNClDy59tI-H80AWGu2vbGgPGN5q7JGhjrv4QX0mZ3romjHDi3x1fnPSM-YnuMM6DDfgrbX0ZJtW8ayV78wVqVOwGJmHJ7nML8mswCQK72-eoOuB3PlirMqGjErp8nyBOE9htFBHwOcOQuBWVAAu9m7pe67B06AiCXhveuHlLvbvb1K8Iqsb5XO2mPjgVqr_UDhoCxyASQywBposTi4faIgq_gQ52FGm4mYIqILC8mOcnBTYGg9pJK_tF9OplW3MIuQus9jWrJYfFMoJTDaOH2NAMVOxW1n1lCrlla1a_N9lFB8yJu06ij7P0V53cLhnm-o1uszpUhVafSI5JF4FBKe9nCIJ9skyC2aqY8PbLrVWk5LnArja_2Ls6T_ully8bSYpx7oVy_aQAfkXE6GJntokoJ64_K9sN6ZGuU2yVeZYxp-RDhZ5FNso6MaaH2kQ3ei_vmlDTqgH3MeJ1jwAtePSMI4C8KN9SkmgfTRRNFO5qgZvbEFyI2tQ2AZ0iO-PQEBRkx1zQc3SkNwH-YiwjTjnGAGeba_FFOSRyOLbwbWqnEjtka73lU8dXRCpXVAX-8UGV84jogmhCzSvSYyA8IEIxSfBcBQsgRiKxlXyt37Fli567EM7LqLv-1hTF8gmAiS34WreUs3MLjho9_EX3JdH4-GfV7TN3CiTwOtRF7LGrHsF37T0gsR784yjWOBijHL0kQr0-Uy5F2LYs0uL1w7AjlRfcM7i3V3JmSKv-R7O_zIMo2R-uld7Eiz44G_AUah_J5Whh5DzMXF_wRZn26hEJG0vAotVlW9OScx9VEsZfaUZCcTck2WtIjAO6ItUZu85ckMaDusX3kpGVIrzZbKwNT9UJI0rx_T7GDLWurK6rYIjJym0qoAO8URLl1GtMSAUCe-b8gbOkY9AtuRizA_LOyPvGkfiZj18OCCTpiYW9gEQ7fTPgfjqE3nB18ntHo48yjd8mwvgcRv2U38StXHuUJtGRFbpm4NtMFBwQCeDIi_-wvfSD2t0j3nZvLS2_XZyKy6UcfDcuClG4akSHrYf7qhPXiUq76AT3v0v7SYkxnLw3tSEACuaKzaGYHdEX-AymKjrgrcZUasL1IBzpAQH5YSYcauJLBCQpNXEwzi9hb9M5Zafjve54qs6H2Ptbg-2oRNcG_OqkGBzQ-Z-b3-06iDd5L1EYfPRSJsqR-PAstE9QVNZnG0nfzIhnj4cWhxn2djH_2vhhCiXOxBqXWfYdztUK05DF3-74XowXS5omucbwWVa-i_6xVBh7WWoLjpSLVYRhgAtl3gflSdDKhRIwz-3MsCivE034Ydna2Wt74Rb6C-dWGfNsQh0A22Qnt0QV89H9CKDjD4_-jgcXcaHSjCyxkiCUBp9RJC4iGtaxynnsIVIJZuMxaSyfldT-wTsac40AuJFqrKO5QFxpTP874-feQdXEZ7VTyT4vQQdHJknx72XebJ1KttWrnxxGZl_zs14sriNUO_Y_zlSkNhsqUv555d7-M0h7P9-z-nw4vqLZ8bbDxEnZc1ZbaqNgskLdx5QIVs4WJRtsFVoi3IQuyt__4jqjGrKVete0FZoRRIZ_mOwdaz9r1wSiJpJoqkQX173zkee2pYahwGP_8VU1_Mmuxg5kkk4JUhDGG8SRGrfgSi4AXGTnL_-cwOhqMCxr9NAtgNHymhAEMBP-xOFJPqr-eBv9862kUQCXbIwCr7Hn5xq1znq5PwnivCayT4c33zwxRfEIIJZGxaMPJax67n9RGVSqS0djeJehx6NAhaMZR-1oHmHiO7IksNkZn789dZlDATZIXqgppBKYzS2UbcilnM9OsOrLBT7VmZghp-no8jKSW1mNSlxKdbvVoYEtPSRQcRA4EkAfzi98tbT1npMRbMWraCX55WjRRJcX7zBgWSPVA1l5Y_eaf78VlxYtGJpUbOd_FT7c1Bw0Y1qEegyAbXQKxYrSyYxt0VxwkKkmtGaGvwVjw-nluvMD1DqKrFWmVYiKRrOnWjjtdxkFKHtUZWT9PFqvQWumJvYlqPggQ3CvGRkQccbmsaApY-3k-KOxQWgHjpkoAbMfzx5AGxiazZ8cUfGDFw6bM6_LVl_fdcVaT8WcDoiLUjeeWgfzJJHdxCy8uhhpBG94H-x3M2UtkreJdPYakBjCTMrbG-XEnaDpcBr2CX1gCDtypWC6airBZ5BXr67jYSNlB9IRoOCWl2l42miQgkUjdUKeb4AFhZOPiCJfHU3JLVz2tsPXC8RVZ-R6SESxyw7QAN7_SUTywBCNrs1RheQbicIb5SGMeFx1iv7PiijtkLa63NnoHXUwftv0qWZgAXRgN2D_S8PBopAIljagUut7iZMbKXzDI38taTp7QvULSQDfUBALg0jeiwbAa585ExEaJsA-BTYwLrmi1xlLjeGSOrWCYfEZdqRC5Rzbjrbs8p0k1_QbWStkpdTfuYMs2xLXreOVt3m8mtgcSc1yZBe1ZJRW3b_eiQ64Ph6bi_o2CcJ6PgOVJXK5kN6wEx5933wctWyVNLaaf9dbhHZWauz643KWVH9P83w29WzluS64X-9Js7RZ_1Ck8xlg1R98dSPcUXsP7Yjqv6LuO6DWLu4NJlNtrT7ZJbq6UhbpcQfJ-v4Y3yir55fw_Ua5ERbfiFcCBeSBVTX7C4ukJ6SCL6PEKKGRip6C58Ib7qCChCV3HCagdbyU0yPTB_GBunU8Ygf7mcZQmF9LEGaLc1fSc5hldjjOMUS31lC54UVVuVA-F23Ucl1ohzghvyDZH-4xLjsVl7a_4qBMORr3LEZ01Ax3NT-XpbUyadhfB8ydd8yhje-Uel3XUzB_rhKs1zvILhCLitvTVc_QHN8gy_DrMZ9CPackNwh-BOg2mRVhjjbZA5kZHhatdq17snNWF5NsUyhWhbe6Zq67bxXGyLN0VsuGkXY1O6ov9m1qEzUk6GtdbYDWIqm1JNyqNXYoZ7_BFdRpKD4_ful8nQ9hHrpUWNQEOQta1iMtssNvHDHn9TtTFpatHLsJRPIjFdXPI7sveTsdZDb59xuTU-LwmgF6HIISJgqsQS11oLoHGILR3CTn4CvPkDFuOsF1mQqMVdsKXuZ52LrTZC4K6AFupt9HVmyWWo8Huj23DQzGwmibH9ZTny-Z5GrZ5fMY8J2IUFbAA==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": {
+              "image_search_queries": null,
+              "grounding_chunks": [
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "CONTROLS AND INDICATORS\nThe landing gear system provides control of the landing gear, brakes, anti-skid, and the overheat\nwarning system. Flight deck controls activate normal gear extension and retraction, emergency gear\nextension, nosewheel steering, warning horn mute, anti-skid operations, and anti-skid test functions. The EICAS page presents indications of landing gear position. Landing Gear Panel\nFigure 15−10−11 Landing Gear Manual Release\nFigure 15−10−12 Bombardier Challenger 605 - Landing Gear Page 17 ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                },
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "CONTROLS AND INDICATORS\nThe landing gear system provides control of the landing gear, brakes, anti-skid, and the overheat\nwarning system. Flight deck controls activate normal gear extension and retraction, emergency gear\nextension, nosewheel steering, warning horn mute, anti-skid operations, and anti-skid test functions. The EICAS page presents indications of landing gear position. Landing Gear Panel\nFigure 15−10−11 Landing Gear Manual Release\nFigure 15−10−12 Bombardier Challenger 605 - Landing Gear Page 17 ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                },
+                {
+                  "image": null,
+                  "maps": null,
+                  "retrieved_context": {
+                    "document_name": "projects/926852982162/locations/global/collections/default_collection/dataStores/bombardier-plan-agent-collection_documents/branches/0/documents/c79fae2475252747216fb23a194f571b",
+                    "rag_chunk": null,
+                    "text": "CONTROLS AND INDICATORS\nThe landing gear system provides control of the landing gear, brakes, anti-skid, and the overheat\nwarning system. Flight deck controls activate normal gear extension and retraction, emergency gear\nextension, nosewheel steering, warning horn mute, anti-skid operations, and anti-skid test functions. The EICAS page presents indications of landing gear position. Landing Gear Panel\nFigure 15−10−11 Landing Gear Manual Release\nFigure 15−10−12 Bombardier Challenger 605 - Landing Gear Page 17 ",
+                    "title": "CL605-LANDING_GEAR",
+                    "uri": "gs://bombardier_test_agent/plan-agent/CL605-LANDING_GEAR.pdf",
+                    "custom_metadata": null,
+                    "file_search_store": null,
+                    "page_number": null
+                  },
+                  "web": null
+                }
+              ],
+              "grounding_supports": [
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 138,
+                    "end_index": 321,
+                    "part_index": null,
+                    "text": "Where to See Brake Pressure\nYou can view both the **Inboard and Outboard Brake Pressure** on the **HYDRAULIC Synoptic Page** of the EICAS (Engine Instrument and Crew Alerting System)."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 422,
+                    "end_index": 508,
+                    "part_index": null,
+                    "text": "*   **Location:** This is found in the **CL605-LANDING_GEAR** document on **page 15**."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 606,
+                    "end_index": 690,
+                    "part_index": null,
+                    "text": "1.  **Fully depress both brake pedals** on either the pilot’s or copilot’s side."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 789,
+                    "end_index": 843,
+                    "part_index": null,
+                    "text": "3.  **Rotate the handle 90°** to the locked position."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0,
+                    1
+                  ],
+                  "segment": {
+                    "start_index": 1129,
+                    "end_index": 1256,
+                    "part_index": null,
+                    "text": "*   **Pressure Requirements:** Both inboard and outboard brakes will hold as long as hydraulic systems 2 and 3 are pressurized."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    0
+                  ],
+                  "segment": {
+                    "start_index": 1257,
+                    "end_index": 1355,
+                    "part_index": null,
+                    "text": "If the hydraulic systems are turned off, only the inboard brakes will hold for a prolonged period."
+                  },
+                  "rendered_parts": null
+                },
+                {
+                  "confidence_scores": null,
+                  "grounding_chunk_indices": [
+                    2
+                  ],
+                  "segment": {
+                    "start_index": 1356,
+                    "end_index": 1583,
+                    "part_index": null,
+                    "text": "*   **Low Pressure Warning:** If the pressure in either the inboard or outboard system drops below **1,015 psi**, an **INBD BRAKE PRESS** or **OUTBD BRAKE PRESS** caution message will be displayed (CL605-LANDING_GEAR, page 19)."
+                  },
+                  "rendered_parts": null
+                }
+              ],
+              "retrieval_metadata": null,
+              "search_entry_point": null,
+              "web_search_queries": null,
+              "google_maps_widget_context_token": null,
+              "retrieval_queries": [
+                "Bombardier aircraft parking brake procedure manual",
+                "Bombardier cockpit instrument panel brake pressure gauge figure",
+                "how to check brake pressure in Bombardier cockpit diagram",
+                "Bombardier aircraft cockpit brake pressure indicator location figure manual"
+              ],
+              "source_flagging_uris": null
+            },
+            "partial": null,
+            "turn_complete": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "748d3de9-4d06-456b-a23d-518c02e61518"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 482,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 482
+                }
+              ],
+              "prompt_token_count": 205,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 205
+                }
+              ],
+              "thoughts_token_count": 1071,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1758,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-102f8975-d96b-42d9-b531-a956e5ed8842",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "748d3de9-4d06-456b-a23d-518c02e61518"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "b235caa8-186c-4c90-9de3-2276daf7ea13",
+            "timestamp": 1777925265.575718
+          }
+        ],
+        "last_update_time": 1777925265.575718
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1777925295.851947
+}
