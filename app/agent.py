@@ -24,7 +24,7 @@ from google.genai import types
 from app.retrievers import create_search_tool
 
 LLM_LOCATION = "global"
-LOCATION = "us-central1"
+LOCATION = "us-east1"
 LLM = "gemini-3-flash-preview"
 
 credentials, project_id = google.auth.default()
@@ -84,8 +84,8 @@ def get_pdf_document(filename: str):
     import google.auth
     from google.cloud import storage
     import fitz
-    
     import tempfile
+    
     cache_dir = os.path.join(tempfile.gettempdir(), "bombardier_cache")
     os.makedirs(cache_dir, exist_ok=True)
     local_path = os.path.join(cache_dir, filename)
@@ -101,16 +101,16 @@ def get_pdf_document(filename: str):
         
     return fitz.open(local_path)
 
-async def extract_page_image(filename: str, page_number: int, context) -> str:
-    """Extracts a specific page from a PDF in GCS as an image, crops it to the diagram, and saves it as an artifact.
+async def extract_page_image(filename: str, page_number: int, tool_context) -> str:
+    """Extracts a specific page from a PDF in GCS as an image, crops it to the diagram, and saves it.
     
     Args:
         filename: The name of the PDF file (e.g., "CL605-LANDING_GEAR.pdf").
         page_number: The page number to extract (1-indexed).
-        context: The tool context (ADK Context).
+        tool_context: The ADK tool context.
         
     Returns:
-        Success message with artifact filename, or an error message.
+        Success message or tag depending on environment.
     """
     import google.auth
     from google.cloud import storage
@@ -183,13 +183,27 @@ async def extract_page_image(filename: str, page_number: int, context) -> str:
             print(f"Error parsing bounding box or cropping: {e}. Saving full page instead.")
             pass
         
-        # Save as artifact
-        artifact_part = types.Part.from_bytes(data=img_data, mime_type="image/png")
-        artifact_filename = f"cropped_{filename}_page_{page_number}.png"
+        # Save to GCS
+        storage_client = storage.Client(project=project_id, credentials=credentials)
+        bucket_name = "bombardier_test_agent"
+        dest_prefix = "plan-agent/extracted-images/"
         
-        await context.save_artifact(filename=artifact_filename, artifact=artifact_part)
+        image_filename = f"cropped_{filename}_page_{page_number}.png"
+        dest_blob = storage_client.bucket(bucket_name).blob(dest_prefix + image_filename)
+        dest_blob.upload_from_string(img_data, content_type="image/png")
         
-        return f"Diagram extracted and saved as artifact: {artifact_filename}"
+        running_in_cloud = os.getenv("RUNNING_IN_CLOUD", "false").lower() == "true"
+        
+        if running_in_cloud:
+            # Save as artifact for GE UI
+            artifact_part = types.Part.from_bytes(data=img_data, mime_type="image/png")
+            await tool_context.save_artifact(filename=image_filename, artifact=artifact_part)
+            return f"<artifact>{image_filename}</artifact>"
+        else:
+            # Local playground: use GCS link in markdown
+            https_url = f"https://storage.cloud.google.com/{bucket_name}/{dest_prefix}{image_filename}"
+            return f"Diagram extracted and saved to GCS. ![Diagram]({https_url})"
+            
     except Exception as e:
         import traceback
         return f"Error extracting image: {e}\nTraceback: {traceback.format_exc()}"
@@ -215,11 +229,62 @@ def read_pdf_text(filename: str, page_number: int) -> str:
     except Exception as e:
         return f"Error reading text: {e}"
 
+async def callback_load_artifact(callback_context, llm_response):
+    """Replace artifact tags with markdown strings in LlmResponse."""
+    import re
+    import base64
+    import io
+    from PIL import Image
+    
+    if not (llm_response.content and llm_response.content.parts):
+        return None
+
+    for part in llm_response.content.parts:
+        if not part.text:
+            continue
+
+        pattern = r'<artifact>(.+?)</artifact>'
+        inline_images = re.findall(pattern, part.text)
+        for filename in inline_images:
+            try:
+                image_artifact = await callback_context.load_artifact(filename=filename)
+            except Exception as e:
+                print(f"Error loading artifact in callback: {e}")
+                image_artifact = None
+            if not image_artifact:
+                continue
+                
+            image_bytes = image_artifact.inline_data.data
+            try:
+                img = Image.open(io.BytesIO(image_bytes)).convert('RGB')
+                img = img.resize((600, int(img.height * (600 / img.width))))
+                jpg_buffer = io.BytesIO()
+                img.save(jpg_buffer, 'JPEG', quality=75)
+                jpg_binary = jpg_buffer.getvalue()
+                base64_encoded = base64.b64encode(jpg_binary).decode('utf-8')
+                mime_string = f'data:image/jpeg;base64,{base64_encoded}'
+                markdown_string = f'![{filename}]({mime_string})'
+                part.text = part.text.replace(
+                    f'<artifact>{filename}</artifact>',
+                    f'\n{markdown_string}\n'
+                )
+            except Exception as e:
+                print(f"Error processing image in callback: {e}")
+                base64_encoded = base64.b64encode(image_bytes).decode('utf-8')
+                mime_string = f'data:image/png;base64,{base64_encoded}'
+                markdown_string = f'![{filename}]({mime_string})'
+                part.text = part.text.replace(
+                    f'<artifact>{filename}</artifact>',
+                    f'\n{markdown_string}\n'
+                )
+                
+    return None
+
 instruction = """You are an expert assistant for Bombardier, helping users query airplane plans and user manuals.
 Your goal is to provide helpful, accurate answers based ONLY on the provided documents.
 When answering:
 1. If you receive a document reference from `search_documents` without snippets, you MUST use `read_pdf_text` to read the content of the relevant pages to answer the question.
-2. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it, describe it, AND use the `extract_page_image` tool to save it as an artifact. The platform will automatically render it. Do not state that you encountered an error if the tool succeeds; instead, let the user know the image was saved as an artifact.
+2. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it, describe it, AND use the `extract_page_image` tool and include the returned markdown image link in your response.
 3. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.
 4. Provide a clear reference to the document and page for proof as a clickable link in this format: `[DocumentName.pdf#page=N](https://storage.cloud.google.com/bombardier_test_agent/plan-agent/DocumentName.pdf#page=N)`.
 5. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).
@@ -233,6 +298,7 @@ root_agent = Agent(
     ),
     instruction=instruction,
     tools=[search_documents, extract_page_image, read_pdf_text],
+    after_model_callback=callback_load_artifact,
 )
 
 app = App(

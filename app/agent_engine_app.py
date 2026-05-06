@@ -79,6 +79,7 @@ class AgentEngineApp(AdkApp):
         self.logger = logging_client.logger(__name__)
         if gemini_location:
             os.environ["GOOGLE_CLOUD_LOCATION"] = gemini_location
+        os.environ["RUNNING_IN_CLOUD"] = "true"
 
     def register_feedback(self, feedback: dict[str, Any]) -> None:
         """Collect and log feedback."""
