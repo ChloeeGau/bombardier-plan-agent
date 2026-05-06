@@ -24,7 +24,7 @@ from google.genai import types
 from app.retrievers import create_search_tool
 
 LLM_LOCATION = "global"
-LOCATION = "us-east1"
+LOCATION = "us-central1"
 LLM = "gemini-3-flash-preview"
 
 credentials, project_id = google.auth.default()
@@ -85,7 +85,8 @@ def get_pdf_document(filename: str):
     from google.cloud import storage
     import fitz
     
-    cache_dir = "/Users/chloegaudreau/.gemini/jetski/scratch/bombardier-plan-agent/cache"
+    import tempfile
+    cache_dir = os.path.join(tempfile.gettempdir(), "bombardier_cache")
     os.makedirs(cache_dir, exist_ok=True)
     local_path = os.path.join(cache_dir, filename)
     
@@ -100,15 +101,16 @@ def get_pdf_document(filename: str):
         
     return fitz.open(local_path)
 
-def extract_page_image(filename: str, page_number: int) -> str:
-    """Extracts a specific page from a PDF in GCS as an image, crops it to the diagram, and saves it to GCS.
+async def extract_page_image(filename: str, page_number: int, context) -> str:
+    """Extracts a specific page from a PDF in GCS as an image, crops it to the diagram, and saves it as an artifact.
     
     Args:
         filename: The name of the PDF file (e.g., "CL605-LANDING_GEAR.pdf").
         page_number: The page number to extract (1-indexed).
+        context: The tool context (ADK Context).
         
     Returns:
-        Success message with GCS URI, or an error message.
+        Success message with artifact filename, or an error message.
     """
     import google.auth
     from google.cloud import storage
@@ -179,22 +181,18 @@ def extract_page_image(filename: str, page_number: int) -> str:
             
         except Exception as e:
             print(f"Error parsing bounding box or cropping: {e}. Saving full page instead.")
-            # Fallback to full page if cropping fails
             pass
         
-        # Save to GCS
-        storage_client = storage.Client(project=project_id, credentials=credentials)
-        bucket_name = "bombardier_test_agent"
-        dest_prefix = "plan-agent/extracted-images/"
+        # Save as artifact
+        artifact_part = types.Part.from_bytes(data=img_data, mime_type="image/png")
+        artifact_filename = f"cropped_{filename}_page_{page_number}.png"
         
-        image_filename = f"cropped_{filename}_page_{page_number}.png"
-        dest_blob = storage_client.bucket(bucket_name).blob(dest_prefix + image_filename)
-        dest_blob.upload_from_string(img_data, content_type="image/png")
+        await context.save_artifact(filename=artifact_filename, artifact=artifact_part)
         
-        https_url = f"https://storage.cloud.google.com/{bucket_name}/{dest_prefix}{image_filename}"
-        return f"Diagram extracted and saved to GCS. ![Diagram]({https_url})"
+        return f"Diagram extracted and saved as artifact: {artifact_filename}"
     except Exception as e:
-        return f"Error extracting image: {e}"
+        import traceback
+        return f"Error extracting image: {e}\nTraceback: {traceback.format_exc()}"
 
 def read_pdf_text(filename: str, page_number: int) -> str:
     """Reads text from a specific page of a PDF.
@@ -221,7 +219,7 @@ instruction = """You are an expert assistant for Bombardier, helping users query
 Your goal is to provide helpful, accurate answers based ONLY on the provided documents.
 When answering:
 1. If you receive a document reference from `search_documents` without snippets, you MUST use `read_pdf_text` to read the content of the relevant pages to answer the question.
-2. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it, describe it, AND use the `extract_page_image` tool and include the returned markdown image link in your response.
+2. If the user asks about an image, diagram, or figure (or a part in them), you MUST search for it, describe it, AND use the `extract_page_image` tool to save it as an artifact. The platform will automatically render it. Do not state that you encountered an error if the tool succeeds; instead, let the user know the image was saved as an artifact.
 3. You should mention the figure number (e.g., Figure 15-10-9) or page number where the information or image is found.
 4. Provide a clear reference to the document and page for proof as a clickable link in this format: `[DocumentName.pdf#page=N](https://storage.cloud.google.com/bombardier_test_agent/plan-agent/DocumentName.pdf#page=N)`.
 5. Be very helpful and precise in your instructions (e.g., for procedures like turning on the parking brake).

@@ -28,6 +28,45 @@ from app.app_utils.typing import Feedback
 # Load environment variables from .env file at runtime
 load_dotenv()
 
+class CustomGcsArtifactService(GcsArtifactService):
+    def _get_artifact_version_sync(
+        self,
+        app_name,
+        user_id,
+        session_id,
+        filename,
+        version=None,
+    ):
+        if version is None:
+            versions = self._list_versions(
+                app_name=app_name,
+                user_id=user_id,
+                session_id=session_id,
+                filename=filename,
+            )
+            if not versions:
+                return None
+            version = max(versions)
+
+        blob_name = self._get_blob_name(
+            app_name, user_id, filename, version, session_id
+        )
+        # Use projection="noAcl" to avoid error on uniform bucket access!
+        blob = self.bucket.get_blob(blob_name, projection="noAcl")
+
+        if not blob:
+            return None
+
+        from google.adk.artifacts.base_artifact_service import ArtifactVersion
+        canonical_uri = f"gs://{self.bucket_name}/{blob.name}"
+
+        return ArtifactVersion(
+            version=version,
+            canonical_uri=canonical_uri,
+            create_time=blob.time_created.timestamp(),
+            mime_type=blob.content_type,
+            custom_metadata=blob.metadata if blob.metadata else {},
+        )
 
 class AgentEngineApp(AdkApp):
     def set_up(self) -> None:
@@ -99,5 +138,5 @@ gemini_location = os.environ.get("GOOGLE_CLOUD_LOCATION")
 logs_bucket_name = os.environ.get("LOGS_BUCKET_NAME")
 agent_engine = AgentEngineApp(
     app=adk_app,
-    artifact_service_builder=lambda: InMemoryArtifactService(),
+    artifact_service_builder=lambda: CustomGcsArtifactService(bucket_name=logs_bucket_name),
 )

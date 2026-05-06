@@ -90,3 +90,23 @@ lint:
 	uv run ruff check . --diff
 	uv run ruff format . --check --diff
 	uv run ty check .
+
+# --- Commands from Agent Starter Pack ---
+
+backend: deploy
+
+deploy:
+	# Export dependencies to requirements file using uv export.
+	(uv export --no-hashes --no-header --no-dev --no-emit-project --no-annotate > app/app_utils/.requirements.txt 2>/dev/null || \
+	uv export --no-hashes --no-header --no-dev --no-emit-project > app/app_utils/.requirements.txt) && \
+	uv run -m app.app_utils.deploy \
+		--source-packages=./app \
+		--entrypoint-module=app.agent_engine_app \
+		--entrypoint-object=agent_engine \
+		--requirements-file=app/app_utils/.requirements.txt \
+		$(if $(AGENT_IDENTITY),--agent-identity) \
+		$(if $(filter command line,$(origin SECRETS)),--set-secrets="$(SECRETS)")
+
+register-gemini-enterprise:
+	@uvx agent-starter-pack@0.41.3 register-gemini-enterprise
+
